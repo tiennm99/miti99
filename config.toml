@@ -73,6 +73,11 @@ weight = 4
 url = "https://cv.miti99.eu.org/miti99.pdf"
 
 [[languages.en.menu.main]]
+name = "Misc"
+weight = 5
+url = "misc/"
+
+[[languages.en.menu.main]]
 name = "Posts"
 weight = 1
 url = "posts/"
