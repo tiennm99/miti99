@@ -26,6 +26,12 @@ customCSS = []
 customSCSS = []
 customJS = []
 
+[params.utterances]
+repo = "tiennm99/miti99.eu.org-utterances"
+issueTerm = "pathname"
+label = ""
+theme = "preferred-color-scheme"
+
 [taxonomies]
 category = "categories"
 series = "series"
