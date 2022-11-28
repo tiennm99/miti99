@@ -36,11 +36,11 @@ Bạn sẽ nhận được 3 bức ảnh với watermark như này:
 ![Inspect](images/4.png)
 
 Giờ mình bỏ từ _Tester_, sau đó ghép với cụm mazebrite.com, ta được link ảnh kết quả. VD: như với hình trên, Tiến được 3 link sau:
-- https://www.mazebrite.com/SavedMazes/j0uo5hMITI*VIVIhPINK-Solution.png
+- [https://www.mazebrite.com/SavedMazes/j0uo5hMITI*VIVIhPINK-Solution.png](https://www.mazebrite.com/SavedMazes/j0uo5hMITI*VIVIhPINK-Solution.png)
 ![Kết quả 1](images/5.png)
-- https://www.mazebrite.com/SavedMazes/j0uo5hMITI*VIVIhPINK-Clues.png
+- [https://www.mazebrite.com/SavedMazes/j0uo5hMITI*VIVIhPINK-Clues.png](https://www.mazebrite.com/SavedMazes/j0uo5hMITI*VIVIhPINK-Clues.png)
 ![Kết quả 2](images/6.png)
-- https://www.mazebrite.com/SavedMazes/j0uo5hMITI*VIVIhPINK-Bare.png
+- [https://www.mazebrite.com/SavedMazes/j0uo5hMITI*VIVIhPINK-Bare.png](https://www.mazebrite.com/SavedMazes/j0uo5hMITI*VIVIhPINK-Bare.png)
 ![Kết quả 3](images/7.png)
 
 Chúc các bạn thành công. Ủng hộ MiTi tại site này và [Facebook](https://www.facebook.com/tiennm99) nhé.
