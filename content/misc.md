@@ -16,3 +16,5 @@ https://loto.miti99.eu.org
 https://maibd2021.miti99.eu.org
 
 https://apart.miti99.eu.org
+
+https://hurt.miti99.eu.org
