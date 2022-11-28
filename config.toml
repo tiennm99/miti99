@@ -9,22 +9,34 @@ pygmentsCodeFences = true
 pygmentsCodeFencesGuessSyntax = true
 enableEmoji = true
 
+googleAnalytics = 183798571
+[params.googleTagManager]
+id = "GTM-WR9BX9K"
+[params.applicationInsights]
+connectionString = "InstrumentationKey=995c7eeb-e39f-4dbf-9d36-222d09fd97d8;IngestionEndpoint=https://eastus-8.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus.livediagnostics.monitor.azure.com/"
+
 [params]
 author = "MiTi99"
-description = "MiTi99's personal website"
-keywords = "blog,developer,personal"
 info = ["Developer", "Wibu"]
+description = "MiTi99's personal website"
+keywords = "miti99,blog,developer,personal"
 avatarURL = "img/avatar.jpg"
+favicon_32 = "img/favicon_32.png"
+favicon_16 = "img/favicon_16.png"
+touchIcon = "img/touchIcon.png"
 dateFormat = "January 2, 2006"
-since = 2019
+since = 2020
+maxSeeAlsoItems = 6
 commit = "https://github.com/tiennm99/miti99.eu.org/tree/"
 rtl = false
+math = true
+katex = true
 colorScheme = "auto"
 hideColorSchemeToggle = false
-maxSeeAlsoItems = 5
 customCSS = []
 customSCSS = []
 customJS = []
+enableTwemoji = true
 
 [params.utterances]
 repo = "tiennm99/miti99.eu.org-utterances"
@@ -60,30 +72,27 @@ url = "index.xml"
 rel = "alternate"
 type = "application/rss+xml"
 
-[languages.en]
-languageName = ":uk:"
-
-[[languages.en.menu.main]]
+[[menu.main]]
 name = "About"
 weight = 2
 url = "about/"
 
-[[languages.en.menu.main]]
+[[menu.main]]
 name = "Contact"
 weight = 3
 url = "contact/"
 
-[[languages.en.menu.main]]
+[[menu.main]]
 name = "CV"
 weight = 4
 url = "https://cv.miti99.eu.org/miti99.pdf"
 
-[[languages.en.menu.main]]
+[[menu.main]]
 name = "Misc"
 weight = 5
 url = "misc/"
 
-[[languages.en.menu.main]]
+[[menu.main]]
 name = "Posts"
 weight = 1
 url = "posts/"
