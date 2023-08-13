@@ -39,7 +39,7 @@ customJS = []
 enableTwemoji = true
 
 [params.utterances]
-repo = "tiennm99/miti99.eu.org-utterances"
+repo = "tiennm99/miti99.eu.org"
 issueTerm = "pathname"
 label = ""
 theme = "preferred-color-scheme"
