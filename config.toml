@@ -27,7 +27,7 @@ touchIcon = "img/touchIcon.png"
 dateFormat = "January 2, 2006"
 since = 2020
 maxSeeAlsoItems = 6
-commit = "https://github.com/tiennm99/miti99.eu.org/tree/"
+commit = "https://github.com/tiennm99/miti99/tree/"
 rtl = false
 math = true
 katex = true
@@ -39,7 +39,7 @@ customJS = []
 enableTwemoji = true
 
 [params.utterances]
-repo = "tiennm99/miti99.eu.org"
+repo = "tiennm99/miti99"
 issueTerm = "pathname"
 label = ""
 theme = "preferred-color-scheme"
@@ -85,7 +85,7 @@ url = "contact/"
 [[menu.main]]
 name = "CV"
 weight = 4
-url = "https://cv.miti99.eu.org/miti99.pdf"
+url = "https://tiennm99.github.io"
 
 [[menu.main]]
 name = "Misc"
