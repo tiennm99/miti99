@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://miti99.dev"
 title = "miti99"
 theme = "hugo-coder"
 languageCode = "en"
