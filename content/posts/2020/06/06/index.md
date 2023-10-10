@@ -16,4 +16,4 @@ Trước đây mình viết bài trên [trang Wordpress của mình](https://mit
 
 Mong nhận được sự đồng hành từ các bạn. Thân ái!
 
-P.S: _Web của nhóm mình tại <https://bkfc-thptduchoa.netlify.app/>, mong các bạn ủng hộ ^^_
+P.S: _Web của nhóm mình tại <https://bkfcduchoa.pages.dev/>, mong các bạn ủng hộ ^^_
