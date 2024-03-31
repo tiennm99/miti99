@@ -1,5 +1,5 @@
 +++
-title = "About Me"
+title = "Giới thiệu"
 slug = "about"
 +++
 
@@ -12,3 +12,9 @@ Mình là một người thích Linux và kiểu mã nguồn mở như thế, h�
 Blog này được tạo ra với mục đích chia sẻ trải nghiệm của mình, cũng như mẹo để giải quyết một số vấn đề mà mình gặp phải trong quá trình sử dụng Archlinux nhé.
 
 Các liên kết hữu ích có tại [trang chủ](/) của mình.
+
+Các bạn có thể liên hệ với mình bằng một trong những cách thức sau:
+
+- [Gmail](mailto:minhtienit99@gmail.com)
+- [Outlook](mailto:tiennm99@outlook.com)
+- [Facebook](https://fb.com/miti99)
