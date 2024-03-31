@@ -80,8 +80,8 @@ params:
     subtitle: Một lập trình viên muốn trở thành phù thuỷ
     imageUrl: "img/avatar.jpg"
     imageTitle: miti99's avatar
-    # imageWidth: 120
-    # imageHeight: 120
+    imageWidth: 256
+    imageHeight: 256
     buttons:
       - name: Archives
         url: archives
