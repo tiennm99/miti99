@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-04-29T07:00:00+07:00
-title = "Youtube Downloader cho Archlinux"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux", "Youtube"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Youtube Downloader cho Archlinux"
+date: 2020-04-29
+tags: [ "Arch", "Linux", "Youtube" ]
+---
 
 Như tiêu đề thì mình sẽ giới thiệu với các bạn 2 công cụ mình thường dùng để tải video từ Youtube.
 

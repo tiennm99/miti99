@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-05-14T07:00:00+07:00
-title = "Kết nối với wifi HCMUT01 của trường ĐH Bách Khoa trên Linux"
-description = ""
-slug = "" 
-tags = ["Linux", "Wifi"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Kết nối với wifi HCMUT01 của trường ĐH Bách Khoa trên Linux"
+date: 2020-05-14
+tags: [ "Linux", "Wifi" ]
+---
 
 Trong Windows thì khi kết nối bạn đã có chỗ để đăng nhập username và password sẵn, giờ mình sẽ hướng dẫn trên linux.
 

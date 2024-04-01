@@ -1,9 +1,8 @@
-+++
-title = "Cài đặt Archlinux trong chế độ boot UEFI"
-date = 2020-04-07
-tags = ["Arch", "Linux"]
-categories = ["Arch", "Linux"]
-+++
+---
+title: "Cài đặt Archlinux trong chế độ boot UEFI"
+date: 2020-04-07
+tags: [ "Arch", "Linux" ]
+---
 
 ## Giới thiệu
 

@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-05-01T07:00:00+07:00
-title = "Theme cho GRUB"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux", "GRUB"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Theme cho GRUB"
+date: 2020-05-01
+tags: [ "Arch", "Linux", "GRUB" ]
+---
 
 Bạn muốn có giao diện GRUB đẹp hơn? Hôm nay mình sẽ chia sẻ cách để tạo giao diện GRUB đẹp hơn một tí. Ở đây mình ví dụ là theme litarvan có sẵn trong repo của Arch:
 

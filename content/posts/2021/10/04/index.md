@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2021-10-04T07:00:00+07:00
-title = "Trở lại"
-description = ""
-slug = "" 
-tags = []
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Trở lại"
+date: 2021-10-04
+tags: [ "Blog", "Notice" ]
+---
 
 Vào tầm tháng 7/2020, như đa phần sinh viên năm 3 khác, mình đi thực tập tốt nghiệp. Với một may mắn nhỏ, mình trúng tuyển chương trình VNG Tech Fresher (VTF) 2020 của [VNG](https://www.vng.com.vn/).
 

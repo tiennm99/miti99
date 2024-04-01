@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-05-05T07:00:00+07:00
-title = "Tăng tốc độ makepkg"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux", "AUR"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Tăng tốc độ makepkg"
+date: 2020-05-05
+tags: [ "Arch", "Linux", "AUR" ]
+---
 
 Bài viết mình sẽ giới thiệu cách tinh chỉnh để quá trình build file từ AUR được nhanh hơn. Tuy nhiên cái lợi cũng có cái nguy cơ đi kèm, có khả năng là bạn sẽ gặp phải một lỗi gì đó, ở đâu đấy trong vài trường hợp :v
 

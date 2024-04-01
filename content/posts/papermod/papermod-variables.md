@@ -15,7 +15,7 @@ weight: 5
 ### Site Variables under `Params`
 
 | name                                   | type          | example                   | Description                                                                               |
-| -------------------------------------- | ------------- | ------------------------- | ----------------------------------------------------------------------------------------- |
+| --------------------------------------| -------------| -------------------------| -----------------------------------------------------------------------------------------|
 | `env`                                  | string        | 'production'              | To set env to production                                                                  |
 | `title`                                | string        | 'My Blog'                 | To set title                                                                              |
 | `description`                          | string        | 'This is a blog of mine'  | To set site description                                                                   |
@@ -62,13 +62,13 @@ weight: 5
 ### Site Variables
 
 | name        | type   | example                                    | Description                                                                                                                   |
-| ----------- | ------ | ------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| -----------| ------| ------------------------------------------| -----------------------------------------------------------------------------------------------------------------------------|
 | `copyright` | string | `**[example.site](https://example.site)**` | This is [HUGO's site variable](https://gohugo.io/variables/site/#site-variables-list), which can also render markdown content |
 
 #### label
 
 | name               | type    | example                 | Description                                      |
-| ------------------ | ------- | ----------------------- | ------------------------------------------------ |
+| ------------------| -------| -----------------------| ------------------------------------------------|
 | `label.text`       | string  | 'Home'                  | To display different label text other than title |
 | `label.icon`       | string  | '/apple-touch-icon.png' | To display a logo image in label                 |
 | `label.iconHeight` | integer | 35                      | To set size of label logo image                  |
@@ -76,7 +76,7 @@ weight: 5
 #### profileMode
 
 | name                      | type    | example                                        | Description                                          |
-| ------------------------- | ------- | ---------------------------------------------- | ---------------------------------------------------- |
+| -------------------------| -------| ----------------------------------------------| ----------------------------------------------------|
 | `profileMode.enabled`     | boolean | true \| false                                  | For enabling profileMode, needs to be explicitly set |
 | `profileMode.title`       | string  | "Title"                                        | Title                                                |
 | `profileMode.subtitle`    | string  | "subtitle here"                                | Subtitle                                             |
@@ -100,7 +100,7 @@ profileMode:
 #### assets
 
 | name                             | type    | example       | Description                                  |
-| -------------------------------- | ------- | ------------- | -------------------------------------------- |
+| --------------------------------| -------| -------------| --------------------------------------------|
 | `assets.favicon`                 | string  | 'icon.ico'    | To set favicon, can be path or external link |
 | `assets.disableHLJS`             | boolean | true \| false | To disable Highlight.js loading              |
 | `assets.disableFingerprinting`   | boolean | true \| false | To disable Sub-Resource integrity for assets |
@@ -110,7 +110,7 @@ profileMode:
 #### cover
 
 | name                     | type    | example       | Description                                             |
-| ------------------------ | ------- | ------------- | ------------------------------------------------------- |
+| ------------------------| -------| -------------| -------------------------------------------------------|
 | `cover.linkFullImages`   | boolean | true \| false | To open full size cover images on click on cover        |
 | `cover.responsiveImages` | boolean | true \| false | To enable/disable generation of responsive cover images |
 | `cover.hidden`           | boolean | true \| false | To hide everywhere but not in structured data           |
@@ -120,7 +120,7 @@ profileMode:
 #### schema
 
 | name                   | type   | example          | Description                   |
-| ---------------------- | ------ | ---------------- | ----------------------------- |
+| ----------------------| ------| ----------------| -----------------------------|
 | `schema.publisherType` | string | 'Organization'   | https://schema.org/publisher  |
 | `schema.sameAs`        | list   | ["URL1", "URL2"] | Set https://schema.org/sameAs |
 
@@ -166,7 +166,7 @@ editPost:
 ### Page Variables
 
 | Name                             | Type          | Example                         | Description                                                                         |
-| -------------------------------- | ------------- | ------------------------------- | ----------------------------------------------------------------------------------- |
+| --------------------------------| -------------| -------------------------------| -----------------------------------------------------------------------------------|
 | `showtoc`                        | boolean       | true \| false                   | To show/hide Table of Contents                                                      |
 | `tocopen`                        | boolean       | true \| false                   | To keep open ToC by default on page load                                            |
 | `hidemeta`                       | boolean       | true \| false                   | To Hide meta elements : date, read-time, author and available-translations for page |

@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-05-02T07:00:00+07:00
-title = "Kích hoạt Numlock khi khởi động với LightDM"
-description = ""
-slug = "" 
-tags = []
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Kích hoạt Numlock khi khởi động với LightDM"
+date: 2020-05-02
+tags: [ "Linux", "Display Manager" ]
+---
 
 Cài đặt numlockx:
 

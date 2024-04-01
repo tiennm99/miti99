@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-04-17T07:00:00+07:00
-title = "Một số vấn đề gặp phải"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux", "Trouble"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Một số vấn đề gặp phải"
+date: 2020-04-17
+tags: [ "Arch", "Linux", "Trouble" ]
+---
 
 Đây là bài viết tổng hợp một số vấn đề mình gặp phải và cách giải quyết, đây là những cách mà mình làm thì nó hoạt động nên ở mức độ "just work", mình không đảm bảo là nếu bạn gặp tình huống như mình thì sẽ được. Bài viết sẽ được cập nhật lại trong quá trình sử dụng của mình nhé!
 

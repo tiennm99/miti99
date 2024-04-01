@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-05-03T07:00:00+07:00
-title = "Splash screen cho Archlinux"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux", "Plymouth"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Splash screen cho Archlinux"
+date: 2020-05-03
+tags: [ "Arch", "Linux", "Plymouth" ]
+---
 
 Bài này mình sẽ hướng dẫn các bạn cài Plymouth làm Splash screen trên Arch Linux. Giống kiểu mấy chấm xoay xoay trên Windows, 5 chấm trắng trắng cam cam trên Ubuntu (mà nay bản 20.04 đổi rồi) hay vòng tròn quay quay trên Fedora vậy.
 
@@ -29,7 +23,7 @@ HOOKS=(base udev plymouth ...)
 Trong file /etc/default/grub, sửa lại kernel parameters lại như sau:
 
 ```shell
-GRUB_CMDLINE_LINUX_DEFAULT=”quiet splash loglevel=3 rd.udev.log_priority=3 vt.global_cursor_default=0″
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash loglevel=3 rd.udev.log_priority=3 vt.global_cursor_default=0"
 ```
 
 Sau đó cập nhật lại grub nhé!

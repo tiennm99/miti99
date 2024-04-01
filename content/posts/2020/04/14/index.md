@@ -1,16 +1,11 @@
-+++ 
-draft = false
-date = 2020-04-14T07:00:00+07:00
-title = "Tinh chỉnh Cinnamon trong Archlinux"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux", "Cinnamon"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Tinh chỉnh Cinnamon trong Archlinux"
+date: 2020-04-14
+tags: [ "Arch", "Linux", "Cinnamon" ]
+---
 
-Nhìn sơ thì cũng thấy Cinnamon khi bạn cài đặt Linux Mint thì đẹp hơn nhiều so với cái mà bạn vừa cài đặt, ôi thôi, nó 'chuối ơi là chuối' luôn. Vì vậy chúng ta sẽ làm cho nó được như trong Mint nha !😀
+Nhìn sơ thì cũng thấy Cinnamon khi bạn cài đặt Linux Mint thì đẹp hơn nhiều so với cái mà bạn vừa cài đặt, ôi thôi, nó '
+chuối ơi là chuối' luôn. Vì vậy chúng ta sẽ làm cho nó được như trong Mint nha !😀
 
 ## Slick-greeter
 
@@ -27,7 +22,8 @@ yay -S lightdm-settings
 ```
 
 Sửa file /etc/lightdm/lightdm.conf như sau:
-Ở dưới mục `[Seat:*]` tìm dòng `greeter-session=example-gtk-gnome`, uncomment và sửa thành `greeter-session=lightdm-slick-greeter`
+Ở dưới mục `[Seat:*]` tìm dòng `greeter-session=example-gtk-gnome`, uncomment và sửa
+thành `greeter-session=lightdm-slick-greeter`
 
 ## Themes và icons
 
@@ -52,15 +48,20 @@ Chỉnh lại trong Settings mục Hardware -> Sound tab Sounds để dùng nhé
 
 ## Phần mềm cần thiết
 
-Khi mới cài hầu như Cinnamon không có gì dùng hết :/, nên mình mới khuyên cài group gnome trước đã rồi hãy cài Cinnamon, mấy cái cần thiết thì như là Screenshot, Terminal, Software:
+Khi mới cài hầu như Cinnamon không có gì dùng hết :/, nên mình mới khuyên cài group gnome trước đã rồi hãy cài Cinnamon,
+mấy cái cần thiết thì như là Screenshot, Terminal, Software:
 
 ```shell
 yay -S gnome-screenshot gnome-terminal gnome-software
 ```
 
-, cơ mà cái gnome thì ‘tặng kèm’ kha khá phần mềm khác nữa :v, mà tiêu chí của Arch là ‘Keep It Simple’ nên nếu không cài gnome thì cũng chẳng sao cả, cứ cài cái gì cần thiết thôi.
+, cơ mà cái gnome thì ‘tặng kèm’ kha khá phần mềm khác nữa :v, mà tiêu chí của Arch là ‘Keep It Simple’ nên nếu không
+cài gnome thì cũng chẳng sao cả, cứ cài cái gì cần thiết thôi.
 
-Đó là điều hơi buồn của cinnamon trên Arch, bởi vì các DE khác thì thường có gói extra đi kèm: `deepin` có `deepin-extra`, `gnome` có `gnome-extra`, `mate` có `mate-extra`,... đến cả thằng em được mệnh danh là 'gọn nhẹ' `xfce4` mà cũng có `xfce4-goodies` nữa.;còn `cinnamon` thì chưa. Nhưng mà nếu cần combo của Cinnamon ư? Thì mình nghĩ cài nhiêu đây là cơ bản rồi:
+Đó là điều hơi buồn của cinnamon trên Arch, bởi vì các DE khác thì thường có gói extra đi kèm: `deepin`
+có `deepin-extra`, `gnome` có `gnome-extra`, `mate` có `mate-extra`,... đến cả thằng em được mệnh danh là 'gọn
+nhẹ' `xfce4` mà cũng có `xfce4-goodies` nữa.;còn `cinnamon` thì chưa. Nhưng mà nếu cần combo của Cinnamon ư? Thì mình
+nghĩ cài nhiêu đây là cơ bản rồi:
 
 ```shell
 yay -S xed xviewer xreader xplayer pix blueberry
@@ -76,4 +77,5 @@ yay -S nemo-fileroller
 
 Sau đó restart nemo: `nemo -q`
 
-Đây chỉ là cài cho giống Mint thôi, còn để làm Arch Cinnamon độc đáo hơn nữa, màu mè hơn nữa thì mình dành cho bài khác nha. Tạm biệt các bạn, hẹn gặp lại.
+Đây chỉ là cài cho giống Mint thôi, còn để làm Arch Cinnamon độc đáo hơn nữa, màu mè hơn nữa thì mình dành cho bài khác
+nha. Tạm biệt các bạn, hẹn gặp lại.

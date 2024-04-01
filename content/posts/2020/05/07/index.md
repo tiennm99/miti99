@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-05-07T07:00:00+07:00
-title = "Giúp pin 'sống' lâu hơn"
-description = ""
-slug = "" 
-tags = []
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Giúp pin 'sống' lâu hơn"
+date: 2020-05-07
+tags: [ "Linux", "Battery" ]
+---
 
 #### Cài đặt TLP
 

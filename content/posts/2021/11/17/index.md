@@ -1,14 +1,8 @@
-+++
-draft = false
-date = 2021-11-17T07:00:00+07:00
-title = "Lần đầu build một bộ PC"
-description = ""
-slug = ""
-tags = []
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Lần đầu build một bộ PC"
+date: 2021-11-17
+tags: [ "PC" ]
+---
 
 __Hiện MiTi cũng mới nhận được máy hôm nay thôi, nên còn bận cài máy, mà háo hức quá nên tối nay viết tạm bợ một bài, trong vài ngày tới sẽ chỉnh sửa lại cho hoàn thiện hơn__
 

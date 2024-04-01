@@ -12,7 +12,7 @@ draft: true
 ## Social Icons
 
 | Name            | Platform Link                   |
-| --------------- | ------------------------------- |
+| ---------------| -------------------------------|
 | `123rf`         | 123rf.com                       |
 | `adobestock`    | stock.adobe.com                 |
 | `applemusic`    | music.apple.com                 |
@@ -106,7 +106,7 @@ socialIcons:
 ## Share Icons
 
 | Platform                                                            |
-| ------------------------------------------------------------------- |
+| -------------------------------------------------------------------|
 | `x` (also generates `#hashtags` from _tags_ linked with post) |
 | `linkedin`                                                          |
 | `reddit`                                                            |

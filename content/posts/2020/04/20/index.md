@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-04-20T07:00:00+07:00
-title = "Auto TRIM SSD"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux", "SSD"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Auto TRIM SSD"
+date: 2020-04-20
+tags: [ "Arch", "Linux", "SSD" ]
+---
 
 Package `util-linux` cung cấp `fstrim.service` và `fstrim.timer` trong `systemd` rồi, nên để sử dụng bạn chỉ cần chạy `fstrim.timer` là đủ. Thực hiện như sau:
 

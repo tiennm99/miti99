@@ -1,7 +1,7 @@
-+++
-title = "Misc"
-slug = "misc"
-+++
+---
+title: "Misc"
+slug: "misc"
+---
 
 https://cv.miti99.eu.org/miti99.pdf
 
