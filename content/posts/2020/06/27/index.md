@@ -1,14 +1,8 @@
-+++ 
-draft = true
-date = 2020-06-27T07:00:00+07:00
-title = "Những việc cần làm sau khi cài đặt Ubuntu 20.04"
-description = ""
-slug = "" 
-tags = ["Ubuntu", "Linux"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Những việc cần làm sau khi cài đặt Ubuntu 20.04"
+date: 2020-06-27
+tags: [ "Ubuntu", "Linux" ]
+---
 
 **Đây là bài viết tổng hợp những điều cơ bản mình đã làm sau khi cài lại Ubuntu 20.04**
 

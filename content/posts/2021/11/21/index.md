@@ -1,14 +1,8 @@
-+++
-draft = false
-date = 2021-11-17T07:00:00+07:00
-title = "PC của tôi và OS của nó"
-description = ""
-slug = ""
-tags = []
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "PC của tôi và OS của nó"
+date: 2021-11-17
+tags: [ "PC" ]
+---
 
 Đọc blog đã lâu thì hẳn bạn cũng biết mình là fan của Linux (gọi là fan cho ngầu chứ a dua học đòi thôi, còn hiểu biết chẳng bao nhiêu hic). Chỉ là từ hồi đi làm tới nay thì cần một hệ thồng "stable" nên ít nghịch ngợm Linux hơn xưa, do bận việc, nghịch bậy lại mắc công cài đi cài lại tốn thời gian.
 

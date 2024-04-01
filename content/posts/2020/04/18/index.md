@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-04-18T07:00:00+07:00
-title = "Tweaks nho nhỏ cho Firefox"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux", "Firefox"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Tweaks nho nhỏ cho Firefox"
+date: 2020-04-18
+tags: [ "Arch", "Linux", "Firefox" ]
+---
 
 ## Cache on RAM
 

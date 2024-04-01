@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-04-19T07:00:00+07:00
-title = "Dùng audio output làm input"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux", "Tips"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Dùng audio output làm input"
+date: 2020-04-19
+tags: [ "Arch", "Linux", "Tips" ]
+---
 
 Khi bạn... gọi cho gấu qua mạng, và muốn có một bản nhạc tình làm nền (cho lãng mạn :v)... Đây là một tips khá hữu ích !😀
 

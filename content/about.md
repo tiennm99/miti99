@@ -1,7 +1,7 @@
-+++
-title = "Giới thiệu"
-slug = "about"
-+++
+---
+title: "Giới thiệu"
+slug: "about"
+---
 
 Xin chào, mừng bạn đã đến với trang của mình.
 

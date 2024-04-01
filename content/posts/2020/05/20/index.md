@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-05-20T07:00:00+07:00
-title = "Pin không sạc đầy"
-description = ""
-slug = "" 
-tags = ["Linux", "Battery"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Pin không sạc đầy"
+date: 2020-05-20
+tags: [ "Linux", "Battery" ]
+---
 
 Ở đây các bạn cần phân biệt với chai pin nhé!
 
@@ -21,12 +15,12 @@ sudo tlp-stat -b
 Ví dụ output hiện tại của mình như sau:
 
 ```shell
---- TLP 1.3.1 --------------------------------------------
-+++ Battery Features: Charge Thresholds and Recalibrate
+---TLP 1.3.1 --------------------------------------------
+---Battery Features: Charge Thresholds and Recalibrate
 natacpi = active (data, thresholds)
 tpacpi-bat = active (recalibrate)
 tp-smapi = inactive (ThinkPad not supported)
-+++ ThinkPad Battery Status: BAT0 (Main / Internal)
+---ThinkPad Battery Status: BAT0 (Main / Internal)
 /sys/class/power_supply/BAT0/manufacturer = LGC
 /sys/class/power_supply/BAT0/model_name = 01AV463
 /sys/class/power_supply/BAT0/cycle_count = 90

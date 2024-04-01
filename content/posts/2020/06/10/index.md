@@ -1,14 +1,8 @@
-+++ 
-draft = true
-date = 2020-06-10T07:00:00+07:00
-title = "Chuyển sang Voidlinux"
-description = ""
-slug = "" 
-tags = ["Void", "Linux"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Chuyển sang Voidlinux"
+date: 2020-06-10
+tags: [ "Void", "Linux" ]
+---
 
 Sau một thời gian sử dụng [Archlinux](https://www.archlinux.org/) cũng khá tâm huyết mình đang chuyển sang dùng thử [Voidlinux](https://voidlinux.org/) *(Người ta dùng thử trên máy ảo, còn mình máy thật :v)*. Tuy vậy, với vốn kiến thức thu được sau khoảng thời gian sử dụng Archlinux thì mình thấy khá thoải mái khi sử dụng Voidlinux.
 

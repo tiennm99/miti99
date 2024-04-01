@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-04-16T07:00:00+07:00
-title = "Zsh và Antibody"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux", "Zsh", "Antibody"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Zsh và Antibody"
+date: 2020-04-16
+tags: [ "Arch", "Linux", "Zsh", "Antibody" ]
+---
 
 Bài viết này mình giới thiệu về zsh, một shell khác với bash, với khả năng tùy biến rất cao, hỗ trợ rất nhiều, nhất là với những bạn hay dùng lệnh.
 

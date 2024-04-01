@@ -52,7 +52,7 @@ disableThemeToggle: true
 You can refer following table for better understanding...
 
 | `defaultTheme` | `disableThemeToggle` | checks local storage? | checks system theme? | Info              |
-| -------------- | -------------------- | --------------------- | -------------------- | ----------------- |
+| --------------| --------------------| ---------------------| --------------------| -----------------|
 | `auto`         | true                 | No                    | Yes                  | only system theme |
 |                | false                | Yes (if not->2)       | Yes (2)              | _switch present_  |
 | `dark`         | true                 | No                    | No                   | force dark only   |
@@ -70,7 +70,7 @@ Create a page with `archive.md` in `content` directory with following content
 .
 ├── config.yml
 ├── content/
-│   ├── archives.md   <--- Create archive.md here
+│   ├── archives.md   <---Create archive.md here
 │   └── posts/
 ├── static/
 └── themes/
@@ -352,7 +352,7 @@ The example above would yield the following link for the post file `posts/post-n
 `https://github.com/<path_to_repo>/content/posts/post-name.md`
 
 | Parameter                 | Required | Default Value |
-| ------------------------- | -------- | ------------- |
+| -------------------------| --------| -------------|
 | `editPost.URL`            | true     | -             |
 | `editPost.appendFilePath` | false    | `false`       |
 | `editPost.Text`           | false    | `Edit`        |

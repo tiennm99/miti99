@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-06-06T07:00:00+07:00
-title = "Chuyển đổi website"
-description = ""
-slug = "" 
-tags = ["Notice"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Chuyển đổi website"
+date: 2020-06-06
+tags: [ "Notice" ]
+---
 
 **Note:** _(Dạo gần đây mình đã đi học lại, và cũng sấp mặt với deadline trên trường, nên hầu như chẳng viết lấy bài nào nữa, nhưng mà sau đợt này có lẽ mình sẽ có thêm "kha khá" kinh nghiệm để chia sẻ cùng các bạn :))))_
 

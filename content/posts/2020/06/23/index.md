@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-06-23T07:00:00+07:00
-title = "Viết blog với hugo"
-description = ""
-slug = "" 
-tags = ["hugo", "blog"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Viết blog với hugo"
+date: 2020-06-23
+tags: [ "hugo", "blog" ]
+---
 
 Như các bạn cũng biết, blog này của mình sử dụng hugo để tạo ra. Bài viết này mình sẽ hướng dẫn các bạn dùng hugo để tạo ra một static website tương tự.
 

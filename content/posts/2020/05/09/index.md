@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-05-09T07:00:00+07:00
-title = "Chạy các app cần GUI trong Docker"
-description = ""
-slug = "" 
-tags = ["Linux", "Docker"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Chạy các app cần GUI trong Docker"
+date: 2020-05-09
+tags: [ "Linux", "Docker" ]
+---
 
 Trường hợp của mình là mình lập trình app Python có sử dụng thư viện `matplotlib`. Để mình có thể sử dụng được giao diện thì mình cài đặt xhost trong host Arch trước:
 

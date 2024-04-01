@@ -71,8 +71,8 @@ params:
   ShowAllPagesInArchive: true
   ShowPageNums: true
   ShowToc: true
-  # comments: false
-  images: [ "images/logo.png" ]
+  comments: true
+  images: [ "img/logo.png" ]
 
   profileMode:
     enabled: true
@@ -107,7 +107,7 @@ params:
       url: "https://facebook.com/miti99"
     - name: youtube
       title: View on Youtube
-      url: "https://youtube.com/miti99"
+      url: "https://youtube.com/@miti99"
     - name: linkedin
       title: View on Linkedin
       url: "https://www.linkedin.com/in/miti99"
@@ -126,9 +126,9 @@ params:
   # icon: icon.png
   # iconHeight: 35
 
-  # analytics:
-  #     google:
-  #         SiteVerificationTag: "XYZabc"
+  analytics:
+    google:
+      SiteVerificationTag: "GTM-WR9BX9K"
 
   assets:
     disableHLJS: true

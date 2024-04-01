@@ -1,14 +1,8 @@
-+++ 
-draft = false
-date = 2020-05-04T10:55:15+07:00
-title = "Chơi game với Steam trên Archlinux"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux", "Game", "Steam"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "Chơi game với Steam trên Archlinux"
+date: 2020-05-04
+tags: [ "Arch", "Linux", "Game", "Steam" ]
+---
 
 Có thể nói Steam là một nền tảng hiếm hoi ưu ái cho Linux, trong khi hầu hết các nền tảng khác không hỗ trợ Linux thì Steam có hẳn một OS riêng dựa trên Linux cho gamer, đó là SteamOS; ngoài ra còn hỗ trợ chính thức cho Ubuntu. Hơn nữa, nhiều tựa game đã làm nên tên tuổi Steam như Dota 2, CS:GO,... Mới đây thì có tựa game khá hay mình cũng có thử (và nghiện) đó là Dota Underlords (nhưng mà quyết tâm cai rồi nha^^). Hiện tại thì mình chỉ chơi game nông trại vui vui là Farm Together cùng với gấu yêu thôi :v. Nói tóm lại là nếu không nói đến các game native (mà đa phần khá là 'chuối', thiếu cuốn hút) thì Steam là nền tảng chơi game tốt nhất hiện nay cho Linux.
 

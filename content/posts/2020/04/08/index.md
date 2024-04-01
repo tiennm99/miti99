@@ -1,27 +1,26 @@
-+++ 
-draft = false
-date = 2020-04-08T07:00:00+07:00
-title = "'Hậu cài đặt' Archlinux"
-description = ""
-slug = "" 
-tags = ["Arch", "Linux"]
-categories = []
-externalLink = ""
-series = []
-+++
+---
+title: "'Hậu cài đặt' Archlinux"
+date: 2020-04-08
+tags: [ "Arch", "Linux" ]
+---
 
 Tiếp theo bài cài đặt Arch Linux thì đây là những điều theo mình là nên làm trước khi reboot để dùng.
 
 ## Cài đặt giao diện cho Arch Linux
 
-Sau khi hoàn tất các bước ở bài cài đặt, thì bạn đã có thể sử dụng Arch Linux rồi, tuy nhiên đó chỉ là giao diện console thôi, để cài đặt môi trường Desktop thì bạn làm như sau: (lúc này vẫn còn ở trong chế độ của `arch-chroot` nha các bạn)
+Sau khi hoàn tất các bước ở bài cài đặt, thì bạn đã có thể sử dụng Arch Linux rồi, tuy nhiên đó chỉ là giao diện console
+thôi, để cài đặt môi trường Desktop thì bạn làm như sau: (lúc này vẫn còn ở trong chế độ của `arch-chroot` nha các bạn)
 
 ```shell
 pacman -S xorg-server
 pacman -S cinnamon
 ```
 
-Ở đây mình dùng desktop environment (DE) là cinnamon; sau này các bài hướng dẫn mình cũng hướng dẫn cho cinnamon thôi. Arch hỗ trợ rất nhiều DE khác nhau được liệt kê ở <https://wiki.archlinux.org/index.php/Desktop_environment,> các bạn có thể chọn một DE khác thích hợp như Gnome, KDE,... Đặc biệt Arch có hỗ trợ i3, một DE có thể nói là 'dành cho lập trình viên' rất 'cool', nhưng mình không pro như thế nên chưa dùng được :v Vì cinnamon cũng dựa trên gtk nên các bạn có thể cài đặt gnome để có những phần mềm bổ sung thêm khác
+Ở đây mình dùng desktop environment (DE) là cinnamon; sau này các bài hướng dẫn mình cũng hướng dẫn cho cinnamon thôi.
+Arch hỗ trợ rất nhiều DE khác nhau được liệt kê ở <https://wiki.archlinux.org/index.php/Desktop_environment,> các bạn có
+thể chọn một DE khác thích hợp như Gnome, KDE,... Đặc biệt Arch có hỗ trợ i3, một DE có thể nói là 'dành cho lập trình
+viên' rất 'cool', nhưng mình không pro như thế nên chưa dùng được :v Vì cinnamon cũng dựa trên gtk nên các bạn có thể
+cài đặt gnome để có những phần mềm bổ sung thêm khác
 
 ```shell
 pacman -S lightdm lightdm-gtk-greeter
@@ -49,7 +48,10 @@ Mặc định bạn mới có user root trong hệ thống thôi, để dùng th
 useradd -m -G wheel -s /bin/bash tien
 ```
 
-(-m để hệ thống tạo một thư mục home cho bạn, vd ở đây là /home/tien; -G wheel để thêm bạn vào group wheel, group này dùng để cấp quyền sudo cho bạn sau này; -s /bin/bash, shell của bạn, ở đây mình dùng bash, sau này mình viết bài giới thiệu cho các bạn về zsh, một shell dễ tùy chỉnh hơn; tien là tên người dùng bạn muốn tạo, mình tên Tiến thì tạo tên tien thôi :v)
+(-m để hệ thống tạo một thư mục home cho bạn, vd ở đây là /home/tien; -G wheel để thêm bạn vào group wheel, group này
+dùng để cấp quyền sudo cho bạn sau này; -s /bin/bash, shell của bạn, ở đây mình dùng bash, sau này mình viết bài giới
+thiệu cho các bạn về zsh, một shell dễ tùy chỉnh hơn; tien là tên người dùng bạn muốn tạo, mình tên Tiến thì tạo tên
+tien thôi :v)
 
 ### Cấp quyền sudo
 
@@ -70,10 +72,12 @@ Bỏ comment ở dòng `wheel ALL=(ALL) ALL`, vậy là được, lưu lại và
 
 ## Cài đặt một terminal
 
-Nếu bạn chỉ cài cinnamon thì ban đầu bạn sẽ chưa có terminal nào, nếu muốn dùng lệnh thì sẽ phải vào TTY khác (Ctrl + Alt + Fx(x từ 2 đến 6 ấy). Ở đây mình cài Terminator nhé:
+Nếu bạn chỉ cài cinnamon thì ban đầu bạn sẽ chưa có terminal nào, nếu muốn dùng lệnh thì sẽ phải vào TTY khác (Ctrl +
+Alt + Fx(x từ 2 đến 6 ấy). Ở đây mình cài Terminator nhé:
 
 ```shell
 pacman -S terminator
 ```
 
-Vậy là bạn đã có một hệ thống 'có thể dùng được' rồi đấy, sau này mình sẽ có các bài làm đẹp Arch, tinh chỉnh Arch,.. nữa. Hẹn gặp lại!!
+Vậy là bạn đã có một hệ thống 'có thể dùng được' rồi đấy, sau này mình sẽ có các bài làm đẹp Arch, tinh chỉnh Arch,..
+nữa. Hẹn gặp lại!!
