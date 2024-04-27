@@ -2,7 +2,7 @@ module:
   imports:
     - path: github.com/adityatelange/hugo-PaperMod
 
-baseURL: "https://miti99.dev"
+baseURL: "https://tiennm99.github.io"
 title: miti99
 paginate: 5
 
