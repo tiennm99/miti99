@@ -14,7 +14,6 @@ buildExpired: false
 enableEmoji: true
 pygmentsUseClasses: true
 mainsections: [ "posts", ]
-googleAnalytics: 183798571
 
 minify:
   disableXML: true
@@ -126,9 +125,9 @@ params:
   # icon: icon.png
   # iconHeight: 35
 
-  analytics:
-    google:
-      SiteVerificationTag: "G-JR36Q9NSNP"
+  # analytics:
+  #   google:
+  #    SiteVerificationTag: "XYZabc"
 
   assets:
     disableHLJS: true
@@ -187,3 +186,5 @@ services:
     disableInlineCSS: true
   twitter:
     disableInlineCSS: true
+  googleAnalytics:
+    ID: G-JR36Q9NSNP
