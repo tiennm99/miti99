@@ -42,7 +42,7 @@
                         const descriptionCell = row.insertCell(1);
                         const urlCell = row.insertCell(2);
 
-                        const repoUrl = `https://github.com/${username}/${repo.name}`;
+                        const repoUrl = repo.html_url;
                         const pagesUrl = repo.homepage;
 
                         nameCell.innerHTML = `<a href="${repoUrl}" target="_blank">${repo.name}</a>`;
