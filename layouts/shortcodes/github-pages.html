@@ -1,0 +1,62 @@
+<div id="github-pages">
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Pages URL</th>
+        </tr>
+        </thead>
+        <tbody id="repos">
+        </tbody>
+    </table>
+</div>
+
+<script>
+    const username = "tiennm99";
+    const type = "all";
+    const perPage = 100;
+    let page = 1;
+
+    function fetchRepos(page) {
+        const url = `https://api.github.com/users/${username}/repos?type=${type}&per_page=${perPage}&page=${page}`;
+
+        fetch(url)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("HTTP error " + response.status);
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.length === 0) {
+                    // No more repositories to fetch
+                    return;
+                }
+
+                const table = document.getElementById("repos");
+                data.forEach(repo => {
+                    if (repo.has_pages) {
+                        const row = table.insertRow(-1);
+                        const nameCell = row.insertCell(0);
+                        const descriptionCell = row.insertCell(1);
+                        const urlCell = row.insertCell(2);
+
+                        const repoUrl = `https://github.com/${username}/${repo.name}`;
+                        const pagesUrl = repo.homepage;
+
+                        nameCell.innerHTML = `<a href="${repoUrl}" target="_blank">${repo.name}</a>`;
+                        descriptionCell.textContent = repo.description;
+                        urlCell.innerHTML = `<a href="${pagesUrl}" target="_blank">${pagesUrl}</a>`;
+                    }
+                });
+
+                // Fetch the next page
+                fetchRepos(page + 1);
+            })
+            .catch(error => console.error("Error:", error));
+    }
+
+    // Start fetching repositories
+    fetchRepos(page);
+</script>
