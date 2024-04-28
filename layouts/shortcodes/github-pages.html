@@ -48,6 +48,7 @@
                             pagesUrl = repo.homepage;
                         } else {
                             pagesUrl = `https://${username}.github.io/${repo.name}`
+                            console.warn(`${repo.name}'s homepage is null. Using ${pagesUrl} instead.`)
                         }
 
                         nameCell.innerHTML = `<a href="${repoUrl}" target="_blank">${repo.name}</a>`;
