@@ -54,7 +54,7 @@ outputs:
 
 params:
   env: production
-  description: "miti99's blog"
+  description: "miti99"
   author: miti99
 
   defaultTheme: auto
@@ -75,22 +75,22 @@ params:
 
   profileMode:
     enabled: true
-    title: miti99's blog
+    title: miti99
     subtitle: Một lập trình viên muốn trở thành phù thuỷ
     imageUrl: "img/avatar.jpg"
     imageTitle: miti99's avatar
     imageWidth: 256
     imageHeight: 256
     buttons:
-      - name: Archives
-        url: archives
       - name: Web CV
-        url: https://tiennm99.github.io
+        url: https://tiennm99.github.io/webcv
       - name: PDF CV
-        url: https://cv.miti99.eu.org/miti99.pdf
+        url: https://tiennm99.github.io/cv/miti99.pdf
+      - name: Pages
+        url: pages
 
   homeInfoParams:
-    Title: "miti99's blog"
+    Title: "miti99"
     Content: >
       👋 Chào mừng đến với blog của miti99. Web được tạo ra bởi miti99, sử dụng Hugo và theme PaperMod!
 
