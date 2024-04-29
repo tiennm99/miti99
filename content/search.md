@@ -1,5 +1,5 @@
 ---
 title: "Tìm kiếm"
-placeholder: Nhập nội dung cần tìm
+placeholder: Nội dung cần tìm
 layout: "search"
 ---
