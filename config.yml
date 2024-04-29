@@ -30,21 +30,21 @@ languages:
       series: series
     menu:
       main:
-        - name: Archives
-          url: archives
-          weight: 1
         - name: Posts
           url: posts
-          weight: 2
+          weight: 1
         - name: Search
           url: search
-          weight: 3
+          weight: 2
         - name: Tags
           url: tags
-          weight: 4
+          weight: 3
         - name: About
           url: about
+          weight: 4
+        - name: Pages
           weight: 5
+          url: pages
 
 outputs:
   home:
@@ -82,12 +82,12 @@ params:
     imageWidth: 256
     imageHeight: 256
     buttons:
+      - name: Archives
+        url: archives
       - name: Web CV
         url: https://tiennm99.github.io/webcv
       - name: PDF CV
         url: https://tiennm99.github.io/cv/miti99.pdf
-      - name: Pages
-        url: pages
 
   homeInfoParams:
     Title: "miti99"
