@@ -15,11 +15,12 @@
 <script>
     const username = "tiennm99";
     const type = "all";
+    const sort = "updated";
     const perPage = 100;
     let page = 1;
 
     function fetchRepos(page) {
-        const url = `https://api.github.com/users/${username}/repos?type=${type}&per_page=${perPage}&page=${page}`;
+        const url = `https://api.github.com/users/${username}/repos?type=${type}&sort=${sort}&per_page=${perPage}&page=${page}`;
 
         fetch(url)
             .then(response => {
