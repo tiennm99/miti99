@@ -1,7 +1,7 @@
 { pkgs ? import <nixpkgs> {} }:
 pkgs.stdenv.mkDerivation {
   name = "hugo-build";
-  buildInputs = [ pkgs.hugo_extended ];
+  buildInputs = [ go, pkgs.hugo_extended ];
   buildPhase = ''
     mkdir -p /app/public
     hugo --minify --destination /app/public
