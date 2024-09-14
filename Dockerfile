@@ -1,7 +1,4 @@
-FROM golang:1.22 AS builder
-
-RUN apt-get update && apt-get install -y git
-RUN go install -tags extended github.com/gohugoio/hugo@v0.124.0
+FROM peaceiris/hugo:v0.124.0-full AS builder
 
 WORKDIR /site
 
@@ -13,6 +10,6 @@ FROM nginx:alpine
 
 COPY --from=builder /site/public /usr/share/nginx/html
 
-EXPOSE 3000
+EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
