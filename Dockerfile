@@ -5,11 +5,11 @@ ENV HUGO_ENVIRONMENT=production
 ENV HUGO_ENV=production
 
 RUN apt-get update && apt-get install -y \
-    wget \
     git \
+    golang \
     nodejs \
     npm \
-    && rm -rf /var/lib/apt/lists/*
+    wget
 
 RUN wget -O /tmp/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-arm64.deb \
     && dpkg -i /tmp/hugo.deb \
