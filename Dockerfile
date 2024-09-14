@@ -1,14 +1,12 @@
-FROM peaceiris/hugo:v0.124.0-full AS builder
-
-WORKDIR /site
-
+FROM peaceiris/hugo:v0.124.0 AS builder
+WORKDIR /srv/hugo
 COPY . .
-
+RUN chown 1000:1000 -R /srv/hugo
 RUN hugo --gc --minify
 
 FROM nginx:alpine
 
-COPY --from=builder /site/public /usr/share/nginx/html
+COPY --from=builder /srv/hugo/public /usr/share/nginx/html
 
 EXPOSE 80
 
