@@ -1,7 +1,7 @@
 FROM golang:1.22 AS builder
 
 RUN apt-get update && apt-get install -y git
-RUN go install -tags extended github.com/gohugoio/hugo@0.124.0
+RUN go install -tags extended github.com/gohugoio/hugo@v0.124.0
 
 WORKDIR /site
 
