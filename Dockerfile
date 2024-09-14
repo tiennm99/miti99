@@ -7,12 +7,12 @@ WORKDIR /site
 
 COPY . .
 
-RUN hugo --minify
+RUN hugo --gc --minify
 
 FROM nginx:alpine
 
 COPY --from=builder /site/public /usr/share/nginx/html
 
-EXPOSE 80
+EXPOSE 3000
 
 CMD ["nginx", "-g", "daemon off;"]
