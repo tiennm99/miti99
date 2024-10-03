@@ -1,11 +1,10 @@
-FROM hugomods/hugo:exts-0.124.0 AS builder
-WORKDIR /srv/hugo
+FROM ghcr.io/gohugoio/hugo:v0.135.0 AS builder
+WORKDIR /app
 COPY . .
-RUN chown 1000:1000 -R /srv/hugo
 ARG BASE_URL
-RUN hugo --gc --minify --cleanDestinationDir --baseURL "${BASE_URL}"
+RUN hugo --gc --minify --cleanDestinationDir -b "${BASE_URL}"
 
-FROM nginx:alpine
-COPY --from=builder /srv/hugo/public /usr/share/nginx/html
+FROM nginx:alpine AS runner
+COPY --from=builder /app/public /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
