@@ -1,4 +1,4 @@
-FROM hugomods/hugo:exts-0.135.0 AS builder
+FROM ghcr.io/gohugoio/hugo:v0.135.0 AS builder
 WORKDIR /app
 COPY . .
 ARG BASE_URL
