@@ -125,7 +125,7 @@ params:
 
   analytics:
     google:
-      SiteVerificationTag: "googlecafba7bebd390cd7"
+      SiteVerificationTag: "G-JR36Q9NSNP"
 
   assets:
     disableHLJS: true
@@ -184,5 +184,3 @@ services:
     disableInlineCSS: true
   twitter:
     disableInlineCSS: true
-  googleAnalytics:
-    ID: G-JR36Q9NSNP
