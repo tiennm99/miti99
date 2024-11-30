@@ -1,6 +1,5 @@
 ---
 title: "Pages"
-slug: "pages"
 ---
 
 Danh sách những trang mình host trên [GitHub Pages](https://pages.github.com/). Thường khá thú vị :>
