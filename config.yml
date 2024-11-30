@@ -1,186 +1,112 @@
-baseURL: "https://tiennm99.github.io"
+baseURL:
 title: miti99
-copyright: "© [miti99](https://github.com/tiennm99)"
-paginate: 5
-theme: [ PaperMod ]
-
-enableInlineShortcodes: true
-enableRobotsTXT: true
-buildDrafts: false
-buildFuture: false
-buildExpired: false
-enableEmoji: true
-pygmentsUseClasses: true
-mainsections: [ "posts" ]
-
-minify:
-  disableXML: true
-  minifyOutput: true
-
+theme: hugo-coder
+languageCode: vi
 defaultContentLanguage: vi
-languages:
-  vi:
-    languageName: "Tiếng Việt"
-    weight: 1
-    taxonomies:
-      category: categories
-      tag: tags
-      series: series
-    menu:
-      main:
-        - name: Posts
-          url: posts
-          weight: 1
-        - name: Search
-          url: search
-          weight: 2
-        - name: Tags
-          url: tags
-          weight: 3
-        - name: About
-          url: about
-          weight: 4
-        - name: Pages
-          weight: 5
-          url: pages
-
-outputs:
-  home:
-    - HTML
-    - RSS
-    - JSON
-
-params:
-  env: production
-  description: "miti99"
-  author: miti99
-
-  defaultTheme: auto
-  # disableThemeToggle: true
-  ShowShareButtons: true
-  ShowReadingTime: true
-  # disableSpecial1stPost: true
-  displayFullLangName: true
-  ShowPostNavLinks: true
-  ShowBreadCrumbs: true
-  ShowCodeCopyButtons: true
-  ShowRssButtonInSectionTermList: true
-  ShowAllPagesInArchive: true
-  ShowPageNums: true
-  ShowToc: true
-  comments: true
-  images: [ "img/logo.png" ]
-
-  profileMode:
-    enabled: true
-    title: miti99
-    subtitle: Thợ code muốn trở thành phù thuỷ
-    imageUrl: "img/avatar.jpg"
-    imageTitle: miti99's avatar
-    imageWidth: 256
-    imageHeight: 256
-    buttons:
-      - name: Archives
-        url: archives
-      - name: Web CV
-        url: https://tiennm99.github.io/webcv
-      - name: PDF CV
-        url: https://tiennm99.github.io/cv/miti99.pdf
-
-  homeInfoParams:
-    Title: "miti99"
-    Content: >
-      👋 Chào mừng đến với blog của miti99. Web được tạo ra bởi miti99, sử dụng Hugo và theme PaperMod!
-
-  socialIcons:
-    - name: github
-      title: View on Github
-      url: "https://github.com/tiennm99"
-    - name: gitlab
-      title: View on Gitlab
-      url: "https://gitlab.com/miti99"
-    - name: facebook
-      title: View on Facebook
-      url: "https://facebook.com/miti99"
-    - name: youtube
-      title: View on Youtube
-      url: "https://youtube.com/@miti99"
-    - name: linkedin
-      title: View on Linkedin
-      url: "https://www.linkedin.com/in/miti99"
-    - name: x
-      title: View on X
-      url: "https://twitter.com/tienthieusac"
-
-  editPost:
-    URL: "https://github.com/tiennm99/miti99/tree/main/content"
-    Text: "Suggest Changes"
-    appendFilePath: true
-
-  # label:
-  # iconSVG: '<svg xmlns="http://www.w3.org/2000/svg" height="25" viewBox="0 -960 960 960" fill="currentColor"><path d="M320-240h320v-80H320v80Zm0-160h320v-80H320v80ZM240-80q-33 0-56.5-23.5T160-160v-640q0-33 23.5-56.5T240-880h320l240 240v480q0 33-23.5 56.5T720-80H240Zm280-520v-200H240v640h480v-440H520ZM240-800v200-200 640-640Z"/></svg>'
-  # text: "Home"
-  # icon: icon.png
-  # iconHeight: 35
-
-  analytics:
-    google:
-      SiteVerificationTag: "G-JR36Q9NSNP"
-
-  assets:
-    disableHLJS: true
-  #     favicon: "<link / abs url>"
-  #     favicon16x16: "<link / abs url>"
-  #     favicon32x32: "<link / abs url>"
-  #     apple_touch_icon: "<link / abs url>"
-  #     safari_pinned_tab: "<link / abs url>"
-
-  # cover:
-  #     hidden: true
-  #     hiddenInList: true
-  #     hiddenInSingle: true
-
-  # fuseOpts:
-  #     isCaseSensitive: false
-  #     shouldSort: true
-  #     location: 0
-  #     distance: 1000
-  #     threshold: 0.4
-  #     minMatchCharLength: 0
-  #     keys: ["title", "permalink", "summary", "content"]
-
-markup:
-  goldmark:
-    renderer:
-      unsafe: true
-  highlight:
-    noClasses: false
-    anchorLineNos: true
-    codeFences: true
-    guessSyntax: true
-    lineNos: true
-    style: monokai
-
-privacy:
-  vimeo:
-    disabled: false
-    simple: true
-
-  twitter:
-    disabled: false
-    enableDNT: true
-    simple: true
-
-  instagram:
-    disabled: false
-    simple: true
-
-  youtube:
-    disabled: false
-    privacyEnhanced: true
+paginate: 6
+enableEmoji: true
 
 services:
-  instagram:
-    disableInlineCSS: true
-  twitter:
-    disableInlineCSS: true
+  googleAnalytics:
+    id: G-JR36Q9NSNP
+
+markup:
+  highlight:
+    noClasses: false
+
+params:
+  author: miti99
+  license: <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA-4.0</a>
+  description: miti99's personal website
+  keywords: blog,developer,personal
+  info:
+    - Senior Software Engineer
+    - Java Game Server Developer
+    - Magician
+  avatarURL: images/avatar.jpg
+  # gravatar: minhtienit99@gmail.com
+  favicon_32: images/favicon.png
+  dateFormat: January 2, 2006
+  since: 2020
+  commit: https://github.com/tiennm99/tiennm99.github.io/tree/
+  rtl: false
+  colorScheme: auto
+  hideColorSchemeToggle: false
+  maxSeeAlsoItems: 5
+  customCSS: []
+  customSCSS: []
+  customJS: []
+  customRemoteJS: []
+  social:
+    - name: github
+      icon: fa-brands fa-github fa-2x
+      weight: 1
+      url: "https://github.com/tiennm99"
+    - name: gitlab
+      icon: fa-brands fa-gitlab fa-2x
+      weight: 2
+      url: "https://gitlab.com/miti99"
+    - name: facebook
+      icon: fa-brands fa-facebook fa-2x
+      weight: 3
+      url: "https://facebook.com/miti99"
+    - name: youtube
+      icon: fa-brands fa-youtube fa-2x
+      weight: 4
+      url: "https://youtube.com/@miti99"
+    - name: linkedin
+      icon: fa-brands fa-linkedin fa-2x
+      weight: 5
+      url: "https://www.linkedin.com/in/miti99"
+    - name: X
+      icon: fa-brands fa-x-twitter fa-2x
+      weight: 6
+      url: "https://twitter.com/tienthieusac"
+    - name: RSS
+      icon: fa-solid fa-rss fa-2x
+      weight: 7
+      url: index.xml
+      rel: alternate
+      type: application/rss+xml
+  giscus:
+    repo: tiennm99/tiennm99.github.io
+    repoID: R_kgDOILzXrw
+    category: Announcements
+    categoryID: DIC_kwDOILzXr84CeYAw
+    mapping: pathname
+    term:
+    strict: 0
+    reactionsEnabled: 1
+    emitMetadata: 0
+    inputPosition: top
+    theme: dark
+    lang:
+    loading: lazy
+
+taxonomies:
+  category: categories
+  series: series
+  tag: tags
+  author: authors
+
+languages:
+  vi:
+    languageName: ":vi:"
+    menu:
+      main:
+        - name: About
+          weight: 1
+          url: about/
+        - name: Blog
+          weight: 2
+          url: posts/
+        - name: Pages
+          weight: 3
+          url: pages/
+        - name: Tags
+          weight: 4
+          url: tags/
+        - name: Web CV
+          url: https://tiennm99.github.io/webcv
+        - name: PDF CV
+          url: https://tiennm99.github.io/cv/miti99.pdf
