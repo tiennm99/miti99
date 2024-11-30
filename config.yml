@@ -3,7 +3,7 @@ title: miti99
 theme: hugo-coder
 languageCode: vi
 defaultContentLanguage: vi
-paginate: 6
+paginate: 20
 enableEmoji: true
 
 services:
@@ -13,6 +13,7 @@ services:
 markup:
   highlight:
     noClasses: false
+    style: monokai
 
 params:
   author: miti99
@@ -37,6 +38,7 @@ params:
   customSCSS: []
   customJS: []
   customRemoteJS: []
+  enableTwemoji: true
   social:
     - name: github
       icon: fa-brands fa-github fa-2x
