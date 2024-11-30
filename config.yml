@@ -1,4 +1,4 @@
-baseURL:
+baseURL: /
 title: miti99
 theme: hugo-coder
 languageCode: vi
@@ -105,10 +105,19 @@ languages:
         - name: Pages
           weight: 3
           url: pages/
-        - name: Tags
+        - name: Search
           weight: 4
+          url: search/
+        - name: Tags
+          weight: 5
           url: tags/
         - name: Web CV
           url: https://tiennm99.github.io/webcv
         - name: PDF CV
           url: https://tiennm99.github.io/cv/miti99.pdf
+
+outputs:
+  home:
+    - html
+    - rss
+    - json
