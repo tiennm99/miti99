@@ -1,7 +1,10 @@
-name: Deploy Hugo site to Pages
+name: Deploy site to GitHub Pages
 
 on:
   push:
+    branches:
+      - main
+  pull_request:
     branches:
       - main
 
@@ -24,7 +27,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.135.0
+      HUGO_VERSION: 0.136.5
     steps:
       - name: Install Hugo CLI
         run: |
