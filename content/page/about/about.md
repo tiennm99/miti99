@@ -1,6 +1,16 @@
 ---
-title: "Giới thiệu"
+title: Giới thiệu
+description: Về bản thân mình
+aliases:
+  - about-me
+  - contact
+menu:
+  main:
+    weight: -90
+    params:
+      icon: user
 ---
+
 
 Xin chào, mừng bạn đã đến với trang của mình.
 
