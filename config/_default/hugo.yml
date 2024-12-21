@@ -1,0 +1,8 @@
+baseurl: /
+languageCode: vi
+theme: hugo-theme-stack
+title: miti99
+defaultContentLanguage: vi
+hasCJKLanguage: false
+pagination:
+  pagerSize: 5

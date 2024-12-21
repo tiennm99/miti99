@@ -1,0 +1,38 @@
+main: []
+
+social:
+  - identifier: facebook
+    name: Facebook
+    url: https://facebook.com/miti99
+    params:
+      icon: brand-facebook
+
+  - identifier: github
+    name: GitHub
+    url: https://github.com/tiennm99
+    params:
+      icon: brand-github
+
+  - identifier: gitlab
+    name: GitLab
+    url: https://gitlab.com/miti99
+    params:
+      icon: brand-gitlab
+
+  - identifier: linkedin
+    name: LinkedIn
+    url: https://linkedin.com/in/miti99
+    params:
+      icon: brand-linkedin
+
+  - identifier: twitter
+    name: Twitter
+    url: https://twitter.com/tienthieusac
+    params:
+      icon: brand-twitter
+
+  - identifier: youtube
+    name: YouTube
+    url: https://youtube.com/@miti99
+    params:
+      icon: brand-youtube
