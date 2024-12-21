@@ -1,5 +1,10 @@
 ---
-title: "Pages"
+title: Pages
+description: Danh sách pages đã làm
+menu:
+  main:
+    params:
+      icon: list
 ---
 
 Danh sách những trang mình host trên [GitHub Pages](https://pages.github.com/). Thường khá thú vị :>
