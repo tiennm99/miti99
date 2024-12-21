@@ -1,4 +1,4 @@
-FROM ghcr.io/gohugoio/hugo:v0.135.0 AS builder
+FROM ghcr.io/gohugoio/hugo:v0.136.5 AS builder
 WORKDIR /app
 COPY . .
 RUN hugo --gc --minify

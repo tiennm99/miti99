@@ -1,5 +1,5 @@
 ---
-title: Giới thiệu
+title: About
 description: Về bản thân mình
 aliases:
   - about-me
