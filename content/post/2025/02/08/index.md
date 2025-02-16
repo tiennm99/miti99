@@ -42,5 +42,4 @@ Bài viết này phân tích hiệu suất của việc sử dụng Virtual Thre
 ## Bonus: Vài ảnh hay ho đến từ [ByteByteGo](https://bytebytego.com/)
 
 ![A Cheatsheet On Message Queues](img/1.png)
-
 ![From Monolith to Microservices: Key Transition Patterns](img/2.png)
