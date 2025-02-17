@@ -51,17 +51,18 @@ Ví dụ, tác giả đã sử dụng LLM để viết một reservoir sampler c
 
 Nhìn chung, tác giả kết luận rằng LLM có thể là một công cụ hữu ích cho các lập trình viên, nhưng chúng không hoàn hảo và cần được sử dụng một cách cẩn thận. LLM có thể giúp cải thiện năng suất, viết test toàn diện hơn và làm cho code dễ đọc hơn.
 
-## Bonus #1
+## Bonus
 
-*Tuần này có kha khá bonus đến từ nhiều nguồn khác nhau:*
-Một vài ebook mình tìm được:
+Tuần này có kha khá bonus đến từ nhiều nguồn khác nhau
+
+### Bonus #1: Một vài ebook mình tìm được
 
 - [Designing Distributed Systems](doc/EN-CNTNT-eBook-DesigningDistributedSystems.pdf)
 - [[FINAL] SOTI 2025 Results Press Release](doc/[FINAL]%20SOTI%202025%20Results%20Press%20Release.pdf)
 - [2025 GDC State of the Game Industry report](doc/2025%20GDC%20State%20of%20the%20Game%20Industry%20report.pdf)
 - [Quastor Summaries](doc/Quastor%20Summaries.pdf)
 
-## Bonus #2: Vài ảnh hay ho đến từ [ByteByteGo](https://bytebytego.com/)
+### Bonus #2: Vài ảnh hay ho đến từ [ByteByteGo](https://bytebytego.com/)
 
 ![The Open Source AI Stack](img/1c328642-7222-4127-a6c5-16614e010022_1283x1536.jpg)
 ![Cookies Vs Sessions Vs JWT Vs PASETO](img/11b53f30-8dba-4520-9b1a-425b54b9b84a_1280x1585.gif)
