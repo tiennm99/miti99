@@ -6,4 +6,4 @@ defaultContentLanguage: vi
 hasCJKLanguage: false
 pagination:
   pagerSize: 5
-timeout: 60s
+timeout: 600s
