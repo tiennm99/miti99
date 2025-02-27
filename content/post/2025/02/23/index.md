@@ -58,6 +58,6 @@ Bài viết blog này trên seangoedecke.com thảo luận về hai kiểu làm 
 ![Oauth 2.0 Explained With Simple Terms](img/e64796b4-03d1-4b0f-a60f-999505f15aeb_1280x1661.jpg)
 ![Session, Cookie, JWT, Token, SSO, and OAuth 2.0 Explained in One Diagram](img/c1155e03-c3dc-4192-8e05-e6b87dc6a574_1280x1664.gif)
 
-### Bonus #3: Một vài link hay ho khác
+### Bonus #2: Một vài link hay ho khác
 
 - [Self-hosted Alternatives to Popular Software](https://openalternative.co/self-hosted)
