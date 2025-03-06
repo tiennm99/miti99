@@ -1,17 +1,17 @@
 main: []
 
 social:
-  - identifier: facebook
-    name: Facebook
-    url: https://facebook.com/miti99
-    params:
-      icon: brand-facebook
-
   - identifier: github
     name: GitHub
     url: https://github.com/tiennm99
     params:
       icon: brand-github
+
+  - identifier: facebook
+    name: Facebook
+    url: https://facebook.com/miti99
+    params:
+      icon: brand-facebook
 
   - identifier: gitlab
     name: GitLab
@@ -25,14 +25,14 @@ social:
     params:
       icon: brand-linkedin
 
-  - identifier: twitter
-    name: Twitter
-    url: https://twitter.com/tienthieusac
-    params:
-      icon: brand-twitter
-
   - identifier: youtube
     name: YouTube
     url: https://youtube.com/@miti99
     params:
       icon: brand-youtube
+
+  - identifier: x
+    name: X
+    url: https://x.com/tienthieusac
+    params:
+      icon: brand-x
