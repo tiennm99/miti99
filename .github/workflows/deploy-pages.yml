@@ -41,16 +41,12 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Cache Hugo resources
-        uses: actions/cache@v4
+      - name: Restore resources
+        uses: actions/cache/restore@v4
         with:
           path: |
-            resources/_gen
-            .hugo_build.lock
-          key: ${{ runner.os }}-hugo-resources-${{ hashFiles('**/*.md', '**/*.html', 'config/_default/**/*.yaml', 'config/_default/**/*.yml', 'themes/**') }}
-          restore-keys: |
-            ${{ runner.os }}-hugo-resources-
-
+            resources
+          key: ${{ runner.os }}-resources
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
@@ -61,6 +57,12 @@ jobs:
             --gc \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Save resources
+        uses: actions/cache/save@v4
+        with:
+          path: |
+            resources
+          key: ${{ runner.os }}-resources
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
