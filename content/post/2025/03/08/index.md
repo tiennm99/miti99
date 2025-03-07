@@ -95,7 +95,6 @@ Bài viết này trình bày triết lý phát triển phần mềm của qntm, 
 
 Bài viết này cung cấp một cái nhìn sâu sắc về cách tiếp cận phát triển phần mềm một cách hiệu quả và bền vững
 
-
 ## Bonus
 
 ### Bonus 1: Vài video hay ho đến từ [ByteByteGo](https://bytebytego.com/)
