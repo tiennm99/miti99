@@ -1,7 +1,7 @@
 ---
 title: "Ứng dụng GitHub Actions Cache để giảm thời gian build"
 date: 2025-03-07
-tags: [ "GitHub", "CI/CD", "Hugo" ]
+tags: [ "GitHub", "CI/CD", "Hugo", "AI-Assisted" ]
 ---
 
 Gần đây khi đăng Newsletter, mình có đính kèm nhiều hình ảnh, và khi build với Hugo, Hugo sẽ cần process những hình ảnh này (tạo nhiều ảnh với kích thước khác nhau, nhằm tối ưu thời gian load). Và thời gian build của mình đã tăng lên đáng kể (có khi lên đến tận 4 phút). Để giải quyết vấn đề này, mình đã tìm hiểu và ứng dụng GitHub Action Cache để giảm thời gian build.
@@ -212,6 +212,8 @@ Ngoài việc cache resources của Hugo, bạn có thể áp dụng cách tiế
 GitHub Actions Cache là một công cụ mạnh mẽ giúp tối ưu quy trình CI/CD của bạn. Với Hugo, việc cache thư mục `resources` giúp giảm đáng kể thời gian build, đặc biệt là khi dự án của bạn có nhiều hình ảnh hoặc stylesheet cần xử lý.
 
 Đây chỉ là một ví dụ cơ bản về cách sử dụng GitHub Actions Cache. Trong thực tế, tùy thuộc vào dự án cụ thể, bạn có thể cần áp dụng các chiến lược cache phức tạp hơn.
+
+Nếu bạn muốn tìm hiểu thêm, có thể tham khảo repository của GitHub Actions Cache: [https://github.com/actions/cache](https://github.com/actions/cache), hoặc trong document sau: [https://docs.github.com/en/actions/guides/caching-dependencies-to-speed-up-workflows](https://docs.github.com/en/actions/guides/caching-dependencies-to-speed-up-workflows).
 
 Hy vọng bài viết này sẽ hữu ích cho bạn trong việc tối ưu quy trình CI/CD của dự án. Nếu bạn có bất kỳ câu hỏi hoặc góp ý nào, đừng ngần ngại để lại comment bên dưới.
 
