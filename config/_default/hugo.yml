@@ -8,3 +8,4 @@ pagination:
   pagerSize: 5
 timeout: 600s
 enableRobotsTXT: true
+timeZone: Asia/Ho_Chi_Minh
