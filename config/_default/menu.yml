@@ -25,14 +25,14 @@ social:
     params:
       icon: brand-linkedin
 
-  - identifier: youtube
-    name: YouTube
-    url: https://youtube.com/@miti99
-    params:
-      icon: brand-youtube
+  # - identifier: youtube
+  #   name: YouTube
+  #   url: https://youtube.com/@miti99
+  #   params:
+  #     icon: brand-youtube
 
-  - identifier: x
-    name: X
-    url: https://x.com/tienthieusac
-    params:
-      icon: brand-x
+  # - identifier: x
+  #   name: X
+  #   url: https://x.com/tienthieusac
+  #   params:
+  #     icon: brand-x
