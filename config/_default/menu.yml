@@ -13,11 +13,11 @@ social:
     params:
       icon: brand-facebook
 
-  - identifier: gitlab
-    name: GitLab
-    url: https://gitlab.com/miti99
-    params:
-      icon: brand-gitlab
+  # - identifier: gitlab
+  #   name: GitLab
+  #   url: https://gitlab.com/miti99
+  #   params:
+  #     icon: brand-gitlab
 
   - identifier: linkedin
     name: LinkedIn
