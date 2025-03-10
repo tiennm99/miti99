@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://tiennm99.github.io/sitemap.xml
