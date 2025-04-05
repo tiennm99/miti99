@@ -80,3 +80,13 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  check-and-submit:
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: indexnow-action
+        uses: bojieyang/indexnow-action@v2
+        with:
+          sitemap-location: 'https://tiennm99.github.io/sitemap.xml'
+          key: ${{ secrets.INDEXNOW_KEY }}
