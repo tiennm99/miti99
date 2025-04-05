@@ -1,0 +1,16 @@
+name: 'IndexNow'
+on:
+  create:
+  schedule:
+    - cron: '0 17 * * *'
+  workflow_dispatch:
+
+jobs:
+  check-and-submit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: indexnow-action
+        uses: bojieyang/indexnow-action@v2
+        with:
+          sitemap-location: 'https://tiennm99.github.io/sitemap.xml'
+          key: ${{ secrets.INDEXNOW_KEY }}
