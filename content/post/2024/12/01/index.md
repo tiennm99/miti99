@@ -1,6 +1,6 @@
 ---
 title: "Cách mở rộng ổ đĩa trong Oracle Cloud Infrastructure (OCI)"
-date: 2024-09-24
+date: 2024-12-01
 tags: [ "Linux", "OCI" ]
 ---
 

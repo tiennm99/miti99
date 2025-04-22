@@ -1,6 +1,6 @@
 ---
 title: "Cách tắt tường lửa (firewall) trên Ubuntu trong Oracle Cloud Infrastructure (OCI)"
-date: 2024-09-24
+date: 2024-09-25
 tags: [ "Linux", "OCI" ]
 ---
 
