@@ -1,6 +1,6 @@
 ---
 title: "Newsletter #13"
-date: 2025-04-23
+date: 2025-04-22
 tags: [ "AI-Assisted" ]
 categories: [ "Newsletter" ]
 ---
