@@ -88,5 +88,5 @@ jobs:
       - name: indexnow-action
         uses: bojieyang/indexnow-action@v2
         with:
-          sitemap-location: 'https://tiennm99.github.io/sitemap.xml'
+          sitemap-location: 'https://miti99.com/sitemap.xml'
           key: ${{ secrets.INDEXNOW_KEY }}
