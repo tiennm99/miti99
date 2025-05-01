@@ -1,10 +1,7 @@
-name: Deploy site to GitHub Pages
+name: Deploy Hugo site to Pages
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
     branches:
       - main
 
@@ -28,6 +25,8 @@ jobs:
     runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.140.2
+      HUGO_ENVIRONMENT: production
+      TZ: Asia/Ho_Chi_Minh
     steps:
       - name: Install Hugo CLI
         run: |
@@ -41,30 +40,31 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
-      - name: Restore resources
+      - name: Cache Restore
+        id: cache-restore
         uses: actions/cache/restore@v4
         with:
           path: |
-            resources
-          key: ${{ runner.os }}-resources-${{ github.run_id }}
-          restore-keys: |
-            ${{ runner.os }}-resources-
+            ${{ runner.temp }}/hugo_cache
+          key: hugo-${{ github.run_id }}
+          restore-keys:
+            hugo-
+      - name: Configure Git
+        run: git config core.quotepath false
       - name: Build with Hugo
-        env:
-          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
-          HUGO_ENVIRONMENT: production
-          TZ: Asia/Ho_Chi_Minh
         run: |
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
-      - name: Save resources
+            --baseURL "${{ steps.pages.outputs.base_url }}/" \
+            --cacheDir "${{ runner.temp }}/hugo_cache"
+      - name: Cache Save
+        id: cache-save
         uses: actions/cache/save@v4
         with:
           path: |
-            resources
-          key: ${{ runner.os }}-resources-${{ github.run_id }}
+            ${{ runner.temp }}/hugo_cache
+          key: ${{ steps.cache-restore.outputs.cache-primary-key }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
