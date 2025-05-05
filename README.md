@@ -1,6 +1,6 @@
-# [tiennm99.github.io](https://tiennm99.github.io)
+# [miti99](https://miti99.com)
 
-Source code of [my blog](https://tiennm99.github.io).
+Source code of [my blog](https://miti99.com).
 
 Credits:
 
