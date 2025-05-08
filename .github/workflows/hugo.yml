@@ -1,4 +1,4 @@
-name: Deploy Hugo site
+name: Deploy Hugo site to Pages
 
 on:
   push:
@@ -11,6 +11,7 @@ permissions:
   contents: read
   pages: write
   id-token: write
+  deployments: write
 
 concurrency:
   group: "pages"
@@ -23,6 +24,7 @@ defaults:
 jobs:
   build:
     runs-on: ubuntu-latest
+    name: Build
     env:
       HUGO_VERSION: 0.140.2
       HUGO_ENVIRONMENT: production
@@ -37,9 +39,6 @@ jobs:
         with:
           submodules: recursive
           fetch-depth: 0
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
       - name: Cache Restore
         id: cache-restore
         uses: actions/cache/restore@v4
@@ -70,24 +69,25 @@ jobs:
         with:
           path: ./public
 
-  deploy:
+  deploy-github:
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
+    name: Deploy to GitHub Pages
     needs: build
     steps:
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v5
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
 
-  deploy-cloudflare-pages:
+  deploy-cloudflare:
     runs-on: ubuntu-latest
-    name: Deploy on CloudFlare Pages
+    name: Deploy to CloudFlare Pages
     needs: build
-    permissions:
-      contents: read
-      deployments: write
     steps:
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
