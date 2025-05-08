@@ -89,12 +89,17 @@ jobs:
     name: Deploy to CloudFlare Pages
     needs: build
     steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: github-pages
+          path: ./public
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy . --project-name=miti99
+          command: pages deploy ./public --project-name=miti99
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
 
   submit-indexnow:
