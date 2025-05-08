@@ -93,7 +93,11 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: github-pages
-          path: ./public
+          path: .
+      - name: Extract artifact
+        run: |
+          mkdir -p public
+          tar -xf artifact.tar -C public
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
