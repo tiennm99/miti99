@@ -96,3 +96,14 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy . --project-name=miti99
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+
+  submit-indexnow:
+    runs-on: ubuntu-latest
+    name: Check and submit to IndexNow
+    needs: deploy-cloudflare
+    steps:
+      - name: indexnow-action
+        uses: bojieyang/indexnow-action@v2
+        with:
+          sitemap-location: 'https://miti99.com/sitemap.xml'
+          key: ${{ secrets.INDEXNOW_KEY }}
