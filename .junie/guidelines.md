@@ -13,7 +13,7 @@ This document provides guidelines and instructions for developing and maintainin
 
 1. **Clone the repository with submodules**:
    ```bash
-   git clone --recurse-submodules https://github.com/yourusername/miti99.git
+   git clone --recurse-submodules https://github.com/tiennm99/miti99.git
    cd miti99
    ```
 
@@ -52,54 +52,6 @@ docker build -t miti99-blog .
 docker run -p 80:80 miti99-blog
 ```
 
-## Testing Information
-
-### Manual Testing
-
-To test the Hugo site manually:
-
-1. **Build Verification**:
-   ```powershell
-   # Build the site
-   hugo --minify
-
-   # Check if the build was successful and index.html exists
-   if (Test-Path "public\index.html") {
-       Write-Host "Build successful!"
-   }
-   ```
-
-2. **Link Checking**:
-   You can use online tools or browser extensions to check for broken links after deploying your site.
-
-### Adding New Tests
-
-When creating tests for the Hugo site, follow these guidelines:
-
-1. Use PowerShell for Windows compatibility
-2. Include clear output messages with PASS/FAIL indicators
-3. Return appropriate exit codes (0 for success, non-zero for failure)
-4. Test both build functionality and content integrity
-
-Example of a test script structure:
-
-```powershell
-# Test description
-Write-Host "Starting test..."
-
-# Test logic
-$result = # Your test logic here
-
-# Report results
-if ($result) {
-    Write-Host "Test passed - PASS"
-    exit 0
-} else {
-    Write-Host "Test failed - FAIL"
-    exit 1
-}
-```
-
 ## CI/CD Pipeline
 
 The project uses GitHub Actions for CI/CD, defined in `.github/workflows/hugo.yml`:
@@ -113,35 +65,46 @@ The workflow uses caching to speed up builds and is triggered on pushes to the m
 
 ## Content Management
 
-### Adding New Posts
+### Creating Newsletter Posts
 
+When creating newsletter posts:
 1. Create a new directory in `content/post/YYYY/MM/DD/` with an `index.md` file
-2. Add front matter with title, date, tags, etc.
-3. Write your content in Markdown
-4. Place images inside the `img` folder
-5. Place documentation files inside the `doc` folder
+2. Format the post like previous newsletter files
+3. Front matter must include:
+   - `title: "Newsletter #X"` (where X is the specific newsletter number, which increases with each new file)
+   - `tags: [ "AI-Assisted", ... ]` (always include "AI-Assisted", can add other tags if needed)
+   - `categories: [ "Newsletter" ]` (always use "Newsletter" as the only category)
+4. Start the post with: `*Mời bạn thưởng thức Newsletter \#X.*` (where X is the same number as in the title)
+5. Add links in the format: `## [original title](url)` (remove all metric parameters from URLs)
+6. After each link, add a Vietnamese description of the content
+7. Place images inside the `img` folder
+8. Place documentation files inside the `doc` folder
 
-Example front matter:
+Example front matter for a newsletter:
 
 ```yaml
 ---
-title: "Your Post Title"
-date: 2025-05-10T10:00:00+07:00
-draft: false
-tags: ["tag1", "tag2"]
-categories: ["category"]
+title: "Newsletter #15"
+date: 2025-05-15
+tags: [ "AI-Assisted" ]
+categories: [ "Newsletter" ]
 ---
 ```
 
-### Handling URLs for Blog Posts
+### Handling URLs for Newsletter Posts
 
 When receiving only a URL:
-1. Write an introduction in Vietnamese for the blog post linked by the URL
+1. Write an introduction in Vietnamese for the content linked by the URL
 2. The introduction should be in a professional style
 3. Common English words familiar to senior developers can be retained
-4. If a post file is already open, add the introduction to that file
-5. If no post file is open, create a new file with the current date and add the introduction there
-6. The introduction must be placed before any bonus sections in the post
+4. Create a newsletter post following these steps:
+   - If a newsletter post file is already open, add the URL and introduction to that file
+   - If no newsletter post file is open, create a new file with the current date
+   - Format the post like previous newsletter files with proper front matter (see above)
+   - Add the URL in the format: `## [original title](url)` (remove all metric parameters from URLs)
+   - After the URL, add the Vietnamese description of the content
+5. Place images inside the `img` folder
+6. Place documentation files inside the `doc` folder
 
 ### Code Style and Conventions
 
