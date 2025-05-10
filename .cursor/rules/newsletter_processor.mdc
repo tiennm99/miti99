@@ -1,7 +1,7 @@
 ---
 description: 
-globs: 
-alwaysApply: true
+globs: *.md
+alwaysApply: false
 ---
 # Newsletter URL Processor
 
@@ -33,11 +33,17 @@ This rule processes URLs to create or update newsletter posts. When a single URL
 
    *Mời bạn thưởng thức Newsletter #[number].*
 
+   ## Main Content
+   [New content URLs and summaries should be added here, before any bonus sections]
+
    ## [Original Article Title](mdc:clean_url)
 
    [Vietnamese summary]
 
    [Optional bullet points for key takeaways]
+
+   ## Bonus Content
+   [Any additional bonus content should be placed after the main content]
    ```
 
 4. File Location:
@@ -63,4 +69,6 @@ This rule processes URLs to create or update newsletter posts. When a single URL
 ## Example
 Input: https://example.com/article?utm_source=twitter
 Output: Creates or updates newsletter post with cleaned URL and Vietnamese summary
+
+
 
