@@ -1,0 +1,66 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Newsletter URL Processor
+
+## Description
+This rule processes URLs to create or update newsletter posts. When a single URL is provided, it will either create a new newsletter post or append to an existing one.
+
+## Trigger
+- When a single URL is provided in the message
+
+## Actions
+1. URL Processing:
+   - Remove tracking parameters (utm_source, ref, etc.)
+   - Clean and preserve base URL
+   - Extract original article title
+
+2. Newsletter Creation/Update:
+   - Check for existing newsletter file for current date
+   - If exists: append new content
+   - If not: create new file with proper structure
+
+3. Content Structure:
+   ```markdown
+   ---
+   title: "Newsletter #[number]"
+   date: [current date]
+   tags: [ "AI-Assisted", [additional relevant tags] ]
+   categories: [ "Newsletter" ]
+   ---
+
+   *Mời bạn thưởng thức Newsletter #[number].*
+
+   ## [Original Article Title](mdc:clean_url)
+
+   [Vietnamese summary]
+
+   [Optional bullet points for key takeaways]
+   ```
+
+4. File Location:
+   - Store in: content/post/YYYY/MM/DD/index.md
+
+## Requirements
+- Summaries must be in Vietnamese
+- Maintain professional tone
+- Include key points in bullet format when appropriate
+- Keep summaries concise but informative
+- Add relevant tags based on article content
+- Always include "AI-Assisted" tag
+
+## Quality Checks
+- Verify URL accessibility
+- Check for duplicate articles
+- Ensure proper date formatting
+- Validate markdown syntax
+- Maintain consistent formatting
+- Check Vietnamese language quality
+- Verify all links are working
+
+## Example
+Input: https://example.com/article?utm_source=twitter
+Output: Creates or updates newsletter post with cleaned URL and Vietnamese summary
+
