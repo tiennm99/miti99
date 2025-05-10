@@ -7,7 +7,7 @@ categories: [ "Newsletter" ]
 
 *Mặc định thì mình follow theo format mỗi ngày chỉ viết 1 post, nhưng mà dạo gần đây lười viết bài nên tích được nhiều bài hay ho quá, nên tạm thời trong thời gian tới sẽ trick lỏ viết lùi thời gian và cố gắng viết nhiều hơn để "kịp hết bài". VD như nay là 10/5 nhưng mình viết cho 2/5 vậy, check git history là ra à, hehe. Mời bạn thưởng thức Newsletter \#15.*
 
-## [Using LLMs for code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
+## [Here’s how I use LLMs to help me write code](https://simonwillison.net/2025/Mar/11/using-llms-for-code/)
 
 Bài viết của Simon Willison chia sẻ kinh nghiệm sử dụng mô hình ngôn ngữ lớn (LLM) trong phát triển phần mềm. Tác giả đưa ra 5 cách sử dụng LLM hiệu quả cho lập trình viên:
 
@@ -23,7 +23,7 @@ Bài viết của Simon Willison chia sẻ kinh nghiệm sử dụng mô hình n
 
 Tác giả nhấn mạnh rằng LLM không phải là công cụ thay thế lập trình viên mà là công cụ hỗ trợ, giúp tăng năng suất và chất lượng code. Bài viết cũng cảnh báo về những hạn chế của LLM như hallucination (tạo ra thông tin sai) và khuyên lập trình viên nên luôn kiểm tra kỹ output từ LLM trước khi sử dụng.
 
-## [Cursor Tips](https://www.nickcraux.com/blog/cursor-tips)
+## [I use Cursor daily - here's how I avoid the garbage parts](https://www.nickcraux.com/blog/cursor-tips)
 
 Bài viết giới thiệu các mẹo và thủ thuật để sử dụng Cursor - một trình soạn thảo code tích hợp AI hiệu quả hơn. Cursor là công cụ được xây dựng dựa trên VS Code nhưng tích hợp sâu với các mô hình ngôn ngữ lớn như GPT-4, giúp lập trình viên tăng năng suất đáng kể.
 
@@ -47,7 +47,7 @@ Bài viết này là phần thứ 5 trong một series về phát triển ứng 
 
 Bài viết cũng thảo luận về các thực hành tốt nhất khi kết hợp Vaadin với Spring Boot, cách xử lý dữ liệu và sự kiện trong ứng dụng, cũng như các chiến lược để tối ưu hóa hiệu suất của ứng dụng web. Đây là tài liệu hữu ích cho các lập trình viên Java muốn xây dựng ứng dụng web hiện đại với sự hỗ trợ của công nghệ AI.
 
-## [Microservices vs Monoliths: How to choose the right architecture for your project](https://dev.to/jhonifaber/microservices-vs-monoliths-how-to-choose-the-right-architecture-for-your-project-2bep)
+## [Microservices vs. Monoliths: How to Choose the Right Architecture for Your Project](https://dev.to/jhonifaber/microservices-vs-monoliths-how-to-choose-the-right-architecture-for-your-project-2bep)
 
 Bài viết phân tích sâu sắc về hai kiến trúc phổ biến trong phát triển phần mềm: microservices và monoliths. Tác giả Jhoni Faber cung cấp một cái nhìn toàn diện về ưu và nhược điểm của mỗi kiến trúc, giúp các đội phát triển đưa ra quyết định phù hợp cho dự án của họ.
 
@@ -57,7 +57,7 @@ Về microservices, bài viết nhấn mạnh các lợi ích như khả năng m
 
 Phần quan trọng nhất của bài viết là hướng dẫn cách lựa chọn kiến trúc phù hợp dựa trên các yếu tố như quy mô dự án, yêu cầu về khả năng mở rộng, nguồn lực sẵn có của đội ngũ, và thời gian phát triển. Tác giả cũng đề xuất một cách tiếp cận thực tế là bắt đầu với monolith được thiết kế tốt và chuyển dần sang microservices khi cần thiết, thay vì áp dụng microservices ngay từ đầu cho mọi dự án.
 
-## [Designing a Scalable Architecture with some Spring Boot examples](https://dev.to/jhonifaber/designing-a-scalable-architecture-with-some-spring-boot-examples-340o)
+## [Designing a Scalable Architecture - with Some Spring Boot Examples](https://dev.to/jhonifaber/designing-a-scalable-architecture-with-some-spring-boot-examples-340o)
 
 Bài viết của Jhoni Faber trình bày chi tiết về cách thiết kế kiến trúc có khả năng mở rộng cao cho các ứng dụng Spring Boot. Tác giả đi sâu vào các nguyên tắc thiết kế và mẫu kiến trúc giúp xây dựng hệ thống có thể dễ dàng phát triển theo quy mô và nhu cầu kinh doanh.
 
@@ -67,7 +67,7 @@ Một điểm nổi bật trong bài viết là các ví dụ thực tế về c
 
 Phần cuối bài viết thảo luận về các chiến lược triển khai và giám sát hệ thống, bao gồm containerization với Docker, orchestration với Kubernetes, và các công cụ monitoring như Prometheus và Grafana. Đây là một tài liệu toàn diện cho các nhà phát triển Spring Boot muốn xây dựng các ứng dụng có khả năng mở rộng cao trong môi trường doanh nghiệp.
 
-## [Java is very fast if you don't create garbage](https://blog.vanillajava.blog/2022/09/java-is-very-fast-if-you-dont-create.html)
+## [Java is Very Fast, If You Don’t Create Many Objects](https://blog.vanillajava.blog/2022/09/java-is-very-fast-if-you-dont-create.html)
 
 Bài viết này từ Vanilla Java Blog phân tích một khía cạnh quan trọng về hiệu suất của Java: ngôn ngữ này có thể cực kỳ nhanh nếu bạn hạn chế việc tạo ra các đối tượng tạm thời (garbage). Tác giả Peter Lawrey, một chuyên gia về Java hiệu năng cao, giải thích rằng mặc dù Garbage Collector của Java đã được cải thiện đáng kể qua nhiều năm, việc liên tục tạo ra các đối tượng mới vẫn là nguyên nhân chính gây ra độ trễ và giảm hiệu suất trong các ứng dụng đòi hỏi hiệu năng cao.
 
