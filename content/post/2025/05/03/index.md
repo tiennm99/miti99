@@ -1,6 +1,6 @@
 ---
 title: "Newsletter #16"
-date: 2025-05-10
+date: 2025-05-03
 tags: [ "AI-Assisted", "Programming Languages", "Software Design" ]
 categories: [ "Newsletter" ]
 ---
