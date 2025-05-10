@@ -31,6 +31,8 @@ Trong những ngày đầu ra mắt Junie còn nhiều điểm cần cải thi�
 
 Cả 2 tool này mình thấy đều không tự tìm được file phù hợp, đều cần chúng ta include hộ. Nhưng mà Trae free, còn Copilot tốn phí, nên là Trae rank C, còn Copilot rank D.
 
+Github Copilot khá chậm, và không có (hoặc mình không biết) chỗ để Copilot tự chạy lệnh (kiểu auto, brave mode) mà phải chạy thủ công, điều này tất nhiên mang tính bảo mật, nhưng làm chậm tiến độ. Tưởng tượng thay vì có thể prompt xong và bỏ đi pha tách cafe, agent chạy xong và mình chỉ cần kiểm tra lại. Thì giờ phải ngồi canh agent có yêu cầu chạy lệnh gì không, nếu có thì approve cho nó. Hơn nữa lâu lâu có vài lệnh Copilot chạy mãi không xong, stuck luôn, phải làm lại từ đầu, rất phiền.
+
 ## Bonus
 
 Ngoài ra mình có tìm được một bài có tierlist nhiều công cụ hơn, các bạn có thể tham khảo thử
