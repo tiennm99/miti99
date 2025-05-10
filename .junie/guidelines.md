@@ -75,7 +75,7 @@ When creating newsletter posts:
    - `tags: [ "AI-Assisted", ... ]` (always include "AI-Assisted", can add other tags if needed)
    - `categories: [ "Newsletter" ]` (always use "Newsletter" as the only category)
 4. Start the post with: `*Mời bạn thưởng thức Newsletter \#X.*` (where X is the same number as in the title)
-5. Add links in the format: `## [original title](url)` (remove all metric parameters from URLs)
+5. Add links in the format: `## [original title](url)` (remove all metric parameters from URLs, but keep the exact original title as it appears in the blog post)
 6. After each link, add a Vietnamese description of the content
 7. Place images inside the `img` folder
 8. Place documentation files inside the `doc` folder
@@ -101,7 +101,7 @@ When receiving only a URL:
    - If a newsletter post file is already open, add the URL and introduction to that file
    - If no newsletter post file is open, create a new file with the current date
    - Format the post like previous newsletter files with proper front matter (see above)
-   - Add the URL in the format: `## [original title](url)` (remove all metric parameters from URLs)
+   - Add the URL in the format: `## [original title](url)` (remove all metric parameters from URLs, but keep the exact original title as it appears in the blog post)
    - After the URL, add the Vietnamese description of the content
 5. Place images inside the `img` folder
 6. Place documentation files inside the `doc` folder
