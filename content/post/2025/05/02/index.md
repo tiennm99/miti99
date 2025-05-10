@@ -1,6 +1,6 @@
 ---
 title: "Newsletter #15"
-date: 2025-05-10
+date: 2025-05-02
 tags: [ "AI-Assisted" ]
 categories: [ "Newsletter" ]
 ---
