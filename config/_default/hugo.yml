@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: https://miti99.com
 languageCode: vi
 theme: hugo-theme-stack
 title: miti99
@@ -9,3 +9,4 @@ pagination:
 timeout: 600s
 enableRobotsTXT: true
 timeZone: Asia/Ho_Chi_Minh
+enableGitInfo: true
