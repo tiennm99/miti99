@@ -38,3 +38,4 @@ Github Copilot khá chậm, và không có (hoặc mình không biết) chỗ đ
 Ngoài ra mình có tìm được một bài có tierlist nhiều công cụ hơn, các bạn có thể tham khảo thử
 
 [Best AI for coding in 2025: 25 developer tools to use (or avoid)](https://www.pragmaticcoders.com/resources/ai-developer-tools)
+[Awesome AI Agents](https://github.com/e2b-dev/awesome-ai-agents)
