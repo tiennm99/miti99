@@ -15,6 +15,8 @@ categories: [ ]
 
 Augment có cơ chế tự index codebase khá tốt, ngoài ra hiện đang Augment đang **unlimit** cho gói Developer, khá hời so với mức giá 30$ (mình khá là serious với những cái "unlimit" dù biết rằng vốn dĩ chẳng có gì là không giới hạn :D)
 
+Update 7/5/2025: Augment đã cập nhật giá mới, đến tận 50$/tháng và giới hạn 600 messages/tháng (tầm 20 messages/ngày). Mình lại thấy Augment không còn tuyệt vời như xưa nữa :D
+
 ### Cursor & Windsurf
 
 Cả 2 tool này đều khá tốt, Cursor ban đầu tỏ ra khá vượt trội, nhưng trong các bản gần đây, Windsurf cũng có những cải thiện đáng kể. Ngoài ra OpenAI cũng đã mua lại Windsurf, có thể trong tương lai Windsurf sẽ tốt hơn
