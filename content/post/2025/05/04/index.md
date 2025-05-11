@@ -1,6 +1,6 @@
 ---
 title: "Newsletter #17"
-date: 2025-05-10
+date: 2025-05-04
 tags: [ "AI-Assisted", "Development", "IDE", "AI" ]
 categories: [ "Newsletter" ]
 ---
