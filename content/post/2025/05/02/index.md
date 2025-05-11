@@ -1,7 +1,7 @@
 ---
 title: "Newsletter #15"
 date: 2025-05-02
-tags: [ "AI-Assisted" ]
+tags: [ "AI-Assisted", "Development", "Java", "Performance", "LLM" ]
 categories: [ "Newsletter" ]
 ---
 

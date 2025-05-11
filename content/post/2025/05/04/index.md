@@ -1,7 +1,7 @@
 ---
 title: "Newsletter #17"
 date: 2025-05-04
-tags: [ "AI-Assisted", "Development", "IDE", "AI" ]
+tags: [ "AI-Assisted", "Development", "Architecture", "Java", "Microservices" ]
 categories: [ "Newsletter" ]
 ---
 
