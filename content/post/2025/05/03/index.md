@@ -1,7 +1,7 @@
 ---
 title: "Newsletter #16"
 date: 2025-05-03
-tags: [ "AI-Assisted", "Programming Languages", "Software Design" ]
+tags: [ "AI-Assisted", "Development", "Career", "Code Quality", "Tech Industry" ]
 categories: [ "Newsletter" ]
 ---
 
