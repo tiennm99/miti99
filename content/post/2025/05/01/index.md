@@ -1,7 +1,7 @@
 ---
-title: "miti xếp hạng các AI Agent"
+title: "MiTi xếp hạng các AI Agent"
 date: 2025-05-01
-tags: [ "AI-Assisted", "Development", "AI", "Coding Tools", "Agent" ]
+tags: [ "Development", "AI", "Coding Tools", "Agent" ]
 categories: [ "Review" ]
 ---
 
