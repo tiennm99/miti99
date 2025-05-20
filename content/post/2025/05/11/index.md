@@ -1,7 +1,7 @@
 ---
 title: "Newsletter #24"
 date: "2025-05-11"
-tags: [ "AI-Assisted", "Development", "Productivity", "Engineering", "Management", "AI", "Database", "NoSQL", "Code Quality", "System Design", "Security", "Performance" ]
+tags: [ "AI-Assisted", "Development", "Performance", "System Design", "Code Quality", "Engineering", "Management" ]
 categories: [ "Newsletter" ]
 ---
 
