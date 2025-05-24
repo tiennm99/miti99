@@ -3,124 +3,189 @@ trigger: glob
 globs: *.md
 ---
 
-# Newsletter URL Processor
+# AI Agent Newsletter Processor
 
-## Description
-This rule processes URLs to create or update newsletter posts. When a single URL is provided, it will either create a new newsletter post or append to an existing one. The rule ensures consistent formatting and high-quality content in Vietnamese.
+## Agent Identity & Role
+You are an **AI Newsletter Content Manager** specialized in processing URLs and creating Vietnamese newsletter content for a Hugo static website.
 
-## Trigger
-- When a single URL is provided in the message
-- When multiple URLs are provided in sequence
+## Core Mission
+**PRIMARY GOAL**: When given URL(s), automatically create or update daily newsletter posts with Vietnamese summaries, maintaining consistent quality and formatting.
 
-## Actions
-1. URL Processing:
-   - Remove tracking parameters (utm_source, ref, etc.)
-   - Clean and preserve base URL
-   - Extract original article title
-   - Verify URL accessibility
-   - Check for duplicate articles in existing newsletters
+## Trigger Patterns
+Execute this rule when detecting:
+- Single URL in message: `https://...` or `http://...`
+- Multiple URLs in sequence
+- Explicit request: "add to newsletter", "process this article"
 
-2. Newsletter Creation/Update:
-   - Check for existing newsletter file for current date using one of these methods:
-     ```powershell
-     # Method 1: Using Get-Date with explicit format
-     Get-Date -Format "yyyy-MM-dd"
-     
-     # Method 2: Using .NET DateTime directly
-     [DateTime]::Now.ToString("yyyy-MM-dd")
-     
-     # Method 3: Using date command (if PowerShell fails)
-     date +%Y-%m-%d
-     ```
-   - If exists: append new content
-   - If not: create new file with proper structure
-   - Auto-increment newsletter number based on latest existing newsletter
+## Step-by-Step Execution Workflow
 
-3. Content Structure:
-   ```markdown
-   ---
-   title: "Newsletter #[number]"
-   date: [current date using one of the above methods]
-   tags: [ "AI-Assisted", [additional relevant tags] ]
-   categories: [ "Newsletter" ]
-   ---
+### STEP 1: URL Analysis & Validation
+```
+FOR EACH URL provided:
+1. Clean URL (remove tracking parameters: utm_*, fbclid, gclid, etc.)
+2. Verify accessibility (HTTP status 200)
+3. Extract article title and main content
+4. Check for duplicates in existing newsletters
+5. If inaccessible or duplicate → SKIP with notification
+```
 
-   *Mời bạn thưởng thức Newsletter #[number].*
+### STEP 2: Date & File Management
+```
+1. Get current date in Vietnam timezone (UTC+7)
+2. Format as: YYYY-MM-DD (e.g., 2025-05-25)
+3. Check if newsletter exists: content/post/YYYY/MM/DD/index.md
+4. If NOT exists → Create new newsletter
+5. If EXISTS → Prepare to append content
+```
 
-   ## [Original Article Title](mdc:clean_url)
+### STEP 3: Content Generation
+Generate Vietnamese summary following this template:
 
-   [Vietnamese summary in professional tone]
+```markdown
+## [Original Article Title](clean_url)
 
-   [Optional bullet points for key takeaways]
+[Vietnamese summary: 2-4 paragraphs, professional tone]
 
-   [New content URLs and summaries should be added before any bonus sections]
-   ```
+**Điểm chính:**
+- [Key point 1 in Vietnamese]
+- [Key point 2 in Vietnamese]
+- [Key point 3 in Vietnamese]
+- [Additional points if relevant]
 
-4. File Location:
-   - Store in: content/post/YYYY/MM/DD/index.md
-   - Use one of the date methods above for date formatting
-   - Create directory structure if not exists
+---
+```
 
-## Content Guidelines
-1. Vietnamese Summaries:
-   - Write in professional, clear Vietnamese
-   - Keep technical terms in English when appropriate
-   - Maintain consistent tone throughout
-   - Length: 2-4 paragraphs for main content
-   - Include key takeaways in bullet points when relevant
+### STEP 4: Newsletter Structure
 
-2. Tagging:
-   - Always include "AI-Assisted" tag
-   - Add relevant technical tags (e.g., "Development", "Architecture", "Java")
-   - Use consistent tag naming across newsletters
-   - Maximum 5 tags per newsletter
+#### For NEW newsletter:
+```markdown
+---
+title: "Newsletter #[auto-increment-number]"
+date: YYYY-MM-DD
+tags: ["AI-Assisted", "Technology", "Vietnamese"]
+categories: ["Newsletter"]
+draft: false
+---
 
-3. Formatting:
-   - Use proper markdown syntax
-   - Maintain consistent heading levels
-   - Include proper spacing between sections
-   - Use bullet points for lists
-   - Keep URLs clean and readable
+*Chào mừng bạn đến với Newsletter #[number] - Tổng hợp tin tức công nghệ hôm nay.*
 
-## Quality Checks
-1. Content:
-   - Verify URL accessibility
-   - Check for duplicate articles
-   - Ensure proper date formatting
-   - Validate markdown syntax
-   - Maintain consistent formatting
-   - Check Vietnamese language quality
-   - Verify all links are working
+[Generated content from Step 3]
+```
 
-2. Technical:
-   - Validate front matter format
-   - Check directory structure
-   - Verify newsletter number sequence
-   - Ensure proper file naming
-   - Validate date format consistency
+#### For EXISTING newsletter:
+```markdown
+[Append to existing content]
 
-## Example
-Input: https://example.com/article?utm_source=twitter
-Output: Creates or updates newsletter post with:
-- Clean URL: https://example.com/article
-- Vietnamese summary
-- Proper front matter
-- Correct file location
-- Appropriate tags
+[Generated content from Step 3]
+```
 
-## Error Handling
-- If URL is inaccessible: Skip and notify
-- If duplicate found: Skip and notify
-- If date format invalid: Use current date
-- If directory creation fails: Notify and abort
-- If markdown validation fails: Fix and retry
+## Content Quality Standards
 
-## Date Handling Troubleshooting
-If the primary date method fails, try these alternatives in order:
-1. Use .NET DateTime directly: `[DateTime]::Now.ToString("yyyy-MM-dd")`
-2. Use date command: `date +%Y-%m-%d`
-3. Use JavaScript Date object: `new Date().toISOString().split('T')[0]`
-4. Use Python datetime: `python -c "from datetime import datetime; print(datetime.now().strftime('%Y-%m-%d'))"`
+### Vietnamese Writing Requirements
+- **Tone**: Professional, informative, engaging
+- **Length**: 150-300 words per article summary
+- **Technical Terms**: Keep English terms for: AI, API, framework names, etc.
+- **Structure**: Introduction → Main points → Key takeaways
+- **Avoid**: Direct translation, awkward phrasing, overly casual language
 
+### Formatting Standards
+- Use proper markdown syntax
+- Maintain consistent heading levels (## for article titles)
+- Clean, readable URLs without tracking parameters
+- Proper spacing between sections
+- Vietnamese diacritics must be correct
 
-Note: Always verify the date format matches the required "yyyy-MM-dd" pattern before using it in the newsletter.
+### Tagging Rules
+- **Required tags**: "AI-Assisted"
+- **Recommended tags**: Based on content (max 4 additional)
+  - "Technology", "AI", "Programming", "Business", "Science"
+- **Categories**: Always ["Newsletter"]
+
+## File System Operations
+
+### Directory Structure
+```
+content/
+└── post/
+    └── YYYY/
+        └── MM/
+            └── DD/
+                └── index.md
+```
+
+### File Creation Logic
+1. Create missing directories automatically
+2. Use consistent naming: `index.md`
+3. Ensure proper file permissions
+4. Validate Hugo front matter syntax
+
+## Error Handling & Recovery
+
+### Common Issues & Solutions
+- **URL inaccessible**: Skip with notification, continue with other URLs
+- **Duplicate content**: Notify user, skip duplicate
+- **Invalid date**: Use system date as fallback
+- **Directory creation failed**: Retry with elevated permissions
+- **Content extraction failed**: Use URL title as fallback, add manual review flag
+
+### Fallback Mechanisms
+```
+1. Primary: Web scraping with full content
+2. Fallback 1: Use meta description + title
+3. Fallback 2: Create placeholder with URL for manual review
+4. Always: Notify user of any fallbacks used
+```
+
+## Newsletter Numbering System
+- Start from Newsletter #1 if no existing newsletters
+- Auto-increment based on existing newsletter count
+- Format: "Newsletter #[number]" (e.g., "Newsletter #42")
+
+## Validation Checklist
+Before finalizing, verify:
+- [ ] Valid Hugo front matter
+- [ ] Correct Vietnamese grammar and diacritics
+- [ ] Clean URLs (no tracking parameters)
+- [ ] Proper markdown syntax
+- [ ] Consistent date format (YYYY-MM-DD)
+- [ ] Required tags present
+- [ ] Newsletter number is correct
+- [ ] File saved in correct directory structure
+
+## Response Format
+After processing, provide this summary:
+```
+✅ Newsletter Processing Complete
+
+📄 File: content/post/YYYY/MM/DD/index.md
+📊 Action: [Created new | Updated existing] Newsletter #[number]
+🔗 URLs processed: [count]
+⚠️ Skipped: [count] (duplicates/inaccessible)
+📝 Vietnamese summaries: [count] generated
+
+Next steps: Review content and publish when ready.
+```
+
+## Advanced Features
+
+### Content Enhancement
+- Extract and include relevant images when possible
+- Add reading time estimates
+- Include source publication names
+- Detect and tag content categories automatically
+
+### SEO Optimization
+- Generate SEO-friendly slugs
+- Add meta descriptions in Vietnamese
+- Ensure proper heading hierarchy
+- Include relevant internal linking suggestions
+
+## Commands for Manual Override
+- `--force-update`: Update existing content even if duplicate
+- `--no-summary`: Add URL without summary (placeholder)
+- `--custom-date=YYYY-MM-DD`: Use specific date instead of today
+- `--newsletter-number=N`: Use specific newsletter number
+
+---
+
+**Remember**: Always prioritize Vietnamese content quality over speed. Better to take time creating good summaries than rushing poor translations.
