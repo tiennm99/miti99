@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.anthropic.com)",
+      "WebFetch(domain:www.subtle.so)",
+      "WebFetch(domain:addyo.substack.com)",
+      "WebFetch(domain:skiplabs.io)",
+      "WebFetch(domain:www.16elt.com)",
+      "WebFetch(domain:meowbark.dev)"
+    ],
+    "deny": []
+  }
+}
