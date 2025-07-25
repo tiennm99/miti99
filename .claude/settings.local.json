@@ -6,5 +6,9 @@
       "Bash(Get-Date -Format \"yyyy-MM-dd\")"
     ],
     "deny": []
-  }
+  },
+  "enabledMcpjsonServers": [
+    "context7",
+    "serena"
+  ]
 }
