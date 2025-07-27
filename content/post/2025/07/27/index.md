@@ -67,7 +67,7 @@ Sau đó chạy lệnh `claude`, đăng nhập với account Claude Pro hoặc A
 
 ### Cài đặt uv
 
-Theo hướng dẫn ở đây: curl -LsSf https://astral.sh/uv/install.sh | sh
+Theo hướng dẫn ở đây: https://docs.astral.sh/uv/getting-started/installation/
 
 TLDR:
 
@@ -93,7 +93,7 @@ Bởi vì hiện tại [Serena đang gặp vấn đề với java project khi ch
 
 #### Cài Python
 
-Cái này thì dễ rồi. Mọi người vào đây tự xử nhé: https://www.python.org/downloads/
+Phần này thì khá đơn giản rồi. Mọi người vào trang chủ tải về và cài đặt nhé: https://www.python.org/downloads/
 
 #### Cài uv
 
@@ -149,6 +149,6 @@ Sau đó chạy `claude` thì sẽ connect được đến MCP Server đang ch�
 
 ## Tổng kết
 
-Trên đây là hướng dẫn của mình về cách setup Claude Code & Serena MCP trên Windows. Cảm ơn các bạn đã đọc đến đây. Nếu có vấn đề gì hãy comment bên dưới, quỡn mình sẽ phản hồi nhé. Hẹn gặp các bạn trong các bài tới.
+Trên đây là hướng dẫn của mình về cách setup Claude Code & Serena MCP trên Windows. Cảm ơn các bạn đã đọc đến đây. Nếu có vấn đề gì hãy comment bên dưới, mình sẽ phản hồi sau nhé. Hẹn gặp các bạn trong các bài tới.
 
 P/S: Hiện tại mình đang nghịch ngợm Claude Code với một task refactor, nếu làm xong, thấy hiệu quả và siêng năng một chút thì mình sẽ viết bài chia sẻ nhau nhé hehe :v
