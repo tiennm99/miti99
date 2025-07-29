@@ -44,6 +44,7 @@ node -v
 Sau đó cần setup npm global prefix để config cài đặt package vào thư mục con trong home, tránh lỗi permission khi chạy không có quyền root, theo hướng dẫn ở đây: https://docs.anthropic.com/en/docs/claude-code/troubleshooting#alternative-solution%3A-create-a-user-writable-npm-prefix-for-global-installs
 
 TLDR:
+
 ```
 mkdir -p ~/.npm-global
 npm config set prefix ~/.npm-global
@@ -114,7 +115,7 @@ pip install uv
 Vào thư mục project, mở cmd/powershell lên và chạy lệnh sau:
 
 ```
-uvx --from git+https://github.com/oraios/serena serena-mcp-server.exe --context ide-assistant --project . --transport sse --port 9121
+uvx --from git+https://github.com/oraios/serena serena-mcp-server --context ide-assistant --project . --transport sse --port 9121
 ```
 
 ### Trong WSL
@@ -152,3 +153,13 @@ Sau đó chạy `claude` thì sẽ connect được đến MCP Server đang ch�
 Trên đây là hướng dẫn của mình về cách setup Claude Code & Serena MCP trên Windows. Cảm ơn các bạn đã đọc đến đây. Nếu có vấn đề gì hãy comment bên dưới, mình sẽ phản hồi sau nhé. Hẹn gặp các bạn trong các bài tới.
 
 P/S: Hiện tại mình đang nghịch ngợm Claude Code với một task refactor, nếu làm xong, thấy hiệu quả và siêng năng một chút thì mình sẽ viết bài chia sẻ nhau nhé hehe :v
+
+## Update 29/07/2025:
+
+Với những project lớn, nên chạy `index-project` trước khi chạy `serena-mcp-server` theo hướng dẫn ở đây: uvx --from git+https://github.com/oraios/serena index-project
+
+TLDR:
+
+```
+uvx --from git+https://github.com/oraios/serena serena project index
+```
