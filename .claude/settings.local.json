@@ -3,7 +3,8 @@
     "allow": [
       "WebFetch",
       "Bash(mkdir:*)",
-      "Bash(Get-Date -Format \"yyyy-MM-dd\")"
+      "Bash(Get-Date -Format \"yyyy-MM-dd\")",
+      "Bash(find:*)"
     ],
     "deny": []
   },
