@@ -70,14 +70,14 @@ jobs:
       - name: Configure Git
         run: |
           git config core.quotepath false
-      # - name: Cache restore
-      #   id: cache-restore
-      #   uses: actions/cache/restore@v5
-      #   with:
-      #     path: ${{ runner.temp }}/hugo_cache
-      #     key: hugo-${{ github.run_id }}
-      #     restore-keys:
-      #       hugo-
+      - name: Cache restore
+        id: cache-restore
+        uses: actions/cache/restore@v5
+        with:
+          path: ${{ runner.temp }}/hugo_cache
+          key: hugo-${{ github.run_id }}
+          restore-keys:
+            hugo-
       - name: Build the site
         run: |
           hugo \
@@ -85,12 +85,12 @@ jobs:
             --minify \
             --baseURL "https://miti99.com/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
-      # - name: Cache save
-      #   id: cache-save
-      #   uses: actions/cache/save@v5
-      #   with:
-      #     path: ${{ runner.temp }}/hugo_cache
-      #     key: ${{ steps.cache-restore.outputs.cache-primary-key }}
+      - name: Cache save
+        id: cache-save
+        uses: actions/cache/save@v5
+        with:
+          path: ${{ runner.temp }}/hugo_cache
+          key: ${{ steps.cache-restore.outputs.cache-primary-key }}
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
