@@ -1,16 +1,16 @@
 ---
 name: mt-add-tags
-description: "Add or update tags in Hugo blog post frontmatter by analyzing post content. Use this skill when the user calls mt-add-tags, wants to add tags to a post, asks about tagging a post, or is about to commit — proactively check if the current post has only generic/minimal tags (e.g., only ['AI-Assisted'] or empty) and offer to generate proper tags. Generate a concise list of 6-7 relevant tags that reflect the actual content. Always ask user to confirm before writing."
+description: "Add or update tags in Hugo blog post frontmatter by analyzing post content. Use this skill when the user calls mt-add-tags, wants to add tags to a post, asks about tagging a post, or is about to commit — proactively check if the current post has only generic/minimal tags (e.g., only ['AI-Assisted'] or empty) and offer to generate proper tags. Generate 2-3 tags for regular posts, 6-7 tags for newsletter posts. Always ask user to confirm before writing."
 ---
 
 ## Overview
 
-This skill analyzes Hugo blog post content and generates a short, relevant list of 6-7 tags, then writes them to the post's frontmatter.
+This skill analyzes Hugo blog post content and generates a relevant list of tags, then writes them to the post's frontmatter.
 
 **Project context:**
 - Blog: Vietnamese tech content at `content/post/YYYY/MM/DD/index.md`
 - Tags: Mix of English (tech terms, tools, concepts) and Vietnamese where natural
-- Target: 6-7 tags — enough to be discoverable, short enough to stay meaningful
+- Target: **2-3 tags** for regular posts, **6-7 tags** for newsletter posts
 
 ## Workflow
 
@@ -54,7 +54,7 @@ grep -rh "^tags:" content/post/ | tr ',' '\n' | grep -oP '(?<=")[^"]+(?=")' | so
 When a proposed tag matches an existing one case-insensitively, use the existing casing.
 -->
 
-Produce exactly **6-7 tags**. Follow these guidelines:
+Produce **2-3 tags** for regular posts, **6-7 tags** for newsletter posts (title starts with "Newsletter #"). Follow these guidelines:
 
 **Good tags are:**
 - Specific to what the post actually covers
@@ -73,7 +73,7 @@ Produce exactly **6-7 tags**. Follow these guidelines:
 - Tags that don't appear in or relate to the actual content
 - More than 7 tags — trim to the most distinctive ones
 
-**Newsletter posts** (title starts with "Newsletter #"): keep `AI-Assisted` and derive 5-6 tags from the main topics covered in that issue.
+**Newsletter posts** (title starts with "Newsletter #"): keep `AI-Assisted` and derive 5-6 tags from the main topics covered in that issue, totalling 6-7 tags.
 
 ### 5. Confirm with user
 
