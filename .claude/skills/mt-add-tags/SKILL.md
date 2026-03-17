@@ -41,6 +41,19 @@ Read the full post body. Identify:
 
 ### 4. Generate tags
 
+<!-- DISABLED: Tag normalization against existing repo tags is not yet active.
+     Existing posts do not have standardized tags, so scanning them would produce
+     inconsistent casing guidance. Re-enable this step once a tag standard is established.
+
+#### 4a. (Future) Normalize against existing tags
+
+Before generating, run:
+```bash
+grep -rh "^tags:" content/post/ | tr ',' '\n' | grep -oP '(?<=")[^"]+(?=")' | sort | uniq -c | sort -rn | head -40
+```
+When a proposed tag matches an existing one case-insensitively, use the existing casing.
+-->
+
 Produce exactly **6-7 tags**. Follow these guidelines:
 
 **Good tags are:**
