@@ -1,5 +1,5 @@
 ---
-name: mt:add-post
+name: mt-add-post
 description: 'URL processing workflow for Hugo blog newsletter posts. Use when user wants to add URLs to their newsletter, process blog content, extract content from links, or update daily newsletter posts. Automatically processes URLs, extracts content, generates Vietnamese summaries, and creates/updates daily newsletter posts with proper numbering and formatting.'
 ---
 

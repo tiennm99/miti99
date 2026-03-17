@@ -1,6 +1,6 @@
 ---
-name: mt:add-tags
-description: "Add or update tags in Hugo blog post frontmatter by analyzing post content. Use this skill when the user calls mt:add-tags, wants to add tags to a post, asks about tagging a post, or is about to commit — proactively check if the current post has only generic/minimal tags (e.g., only ['AI-Assisted'] or empty) and offer to generate proper tags. Generate a concise list of 6-7 relevant tags that reflect the actual content. Always ask user to confirm before writing."
+name: mt-add-tags
+description: "Add or update tags in Hugo blog post frontmatter by analyzing post content. Use this skill when the user calls mt-add-tags, wants to add tags to a post, asks about tagging a post, or is about to commit — proactively check if the current post has only generic/minimal tags (e.g., only ['AI-Assisted'] or empty) and offer to generate proper tags. Generate a concise list of 6-7 relevant tags that reflect the actual content. Always ask user to confirm before writing."
 ---
 
 ## Overview
