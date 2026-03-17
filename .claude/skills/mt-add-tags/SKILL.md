@@ -99,7 +99,19 @@ Replace the entire existing `tags:` line. Preserve all other frontmatter fields 
 
 ## Proactive behavior (before commit)
 
-When the user is about to commit (`/commit`, `mt:commit-push-pr`, or similar), check the most recently modified post file. If its tags look minimal (only 1-2 tags, or only `AI-Assisted`/`Newsletter`), say:
+When the user is about to commit (`/commit`, `mt:commit-push-pr`, or similar), find the most recently modified `content/post/*/index.md` file:
+
+```bash
+git diff --name-only HEAD | grep "^content/post/" | head -1
+```
+
+If that returns nothing, check unstaged changes:
+
+```bash
+git status --short | grep "content/post/" | awk '{print $2}' | head -1
+```
+
+If a post file is found and its tags look minimal (only 1-2 tags, or only `AI-Assisted`/`Newsletter`), say:
 
 > "Post `content/post/.../index.md` chỉ có tags: [...]. Bạn có muốn thêm tags trước khi commit không? [Y/n]"
 
