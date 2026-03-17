@@ -10,9 +10,9 @@ PROJECT_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/../../../.." && pwd)"
 CONTENT_DIR="$PROJECT_ROOT/content/post"
 
 # Get current date in YYYY/MM/DD format
-CURRENT_YEAR=$(date +%Y)
-CURRENT_MONTH=$(date +%m)
-CURRENT_DAY=$(date +%d)
+CURRENT_YEAR=$(TZ='Asia/Ho_Chi_Minh' date +%Y)
+CURRENT_MONTH=$(TZ='Asia/Ho_Chi_Minh' date +%m)
+CURRENT_DAY=$(TZ='Asia/Ho_Chi_Minh' date +%d)
 
 # Function to find newsletter number in a file
 extract_newsletter_number() {
