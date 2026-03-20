@@ -1,11 +1,13 @@
 {
   "enabledPlugins": {
+    "commit-commands@claude-plugins-official": true,
     "skill-creator@claude-plugins-official": true,
-    "commit-commands@claude-plugins-official": true
+    "superpowers@claude-plugins-official": true
   },
   "permissions": {
     "allow": [
       "Bash(.claude/skills/**)",
+      "Bash(bash .claude/skills/**)",
       "Bash(cat *)",
       "Bash(cp *)",
       "Bash(curl *)",
@@ -26,6 +28,8 @@
       "Bash(sed *)",
       "Edit(*)",
       "Read(*)",
+      "Skill(commit-commands:commit)",
+      "Skill(update-config)",
       "WebFetch(*)",
       "WebSearch(*)",
       "Write(*)",
