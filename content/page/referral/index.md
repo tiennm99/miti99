@@ -29,3 +29,9 @@ Share Your Referral Link
 https://synthetic.new/?referral=CNBFyw28zF0dZoj
 
 Your referral link contains your unique code: CNBFyw28zF0dZoj
+
+## [ModelArk](https://www.byteplus.com/activity/codingplan?ac=MMAUCIS9NT1S&rc=2739UWRE)
+
+https://www.byteplus.com/activity/codingplan?ac=MMAUCIS9NT1S&rc=2739UWRE
+
+![modelark](modelark.png)
