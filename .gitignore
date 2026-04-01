@@ -1,5 +1,6 @@
 .idea/
 .hugo_build.lock
+.claude/session-state/
 settings.local.json
 
 
