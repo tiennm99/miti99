@@ -1,8 +1,8 @@
 {
   "enabledPlugins": {
-    "commit-commands@claude-plugins-official": true,
-    "skill-creator@claude-plugins-official": true,
-    "superpowers@claude-plugins-official": true
+    "commit-commands@claude-plugins-official": false,
+    "skill-creator@claude-plugins-official": false,
+    "superpowers@claude-plugins-official": false
   },
   "permissions": {
     "allow": [
@@ -26,13 +26,13 @@
       "Bash(python *)",
       "Bash(python3 *)",
       "Bash(sed *)",
-      "Edit(*)",
-      "Read(*)",
+      "Edit(content)",
+      "Read(content)",
       "Skill(commit-commands:commit)",
       "Skill(update-config)",
       "WebFetch(*)",
       "WebSearch(*)",
-      "Write(*)",
+      "Write(content)",
       "mcp__acp__Bash",
       "mcp__acp__Edit",
       "mcp__acp__Write",
