@@ -30,6 +30,16 @@ https://synthetic.new/?referral=CNBFyw28zF0dZoj
 
 Your referral link contains your unique code: CNBFyw28zF0dZoj
 
+## [ClaudeKit](https://claudekit.cc/?ref=BWA910UK)
+
+ClaudeKit is a platform providing tools and resources to work with Claude AI more effectively — including prompt templates, workflows, and extensions.
+
+Sign up via the referral link to get **20% off** your first purchase!
+
+Referral code: `BWA910UK`
+
+Link: https://claudekit.cc/?ref=BWA910UK
+
 ## [ModelArk](https://www.byteplus.com/activity/codingplan?ac=MMAUCIS9NT1S&rc=2739UWRE)
 
 https://www.byteplus.com/activity/codingplan?ac=MMAUCIS9NT1S&rc=2739UWRE
