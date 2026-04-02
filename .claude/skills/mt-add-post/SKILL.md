@@ -30,7 +30,7 @@ This skill manages the complete workflow for adding newsletter posts to a Hugo b
 
 For each URL, run the bundled script:
 ```bash
-.claude/skills/mt-add-post/scripts/prepare_url.sh "<url>"
+node .claude/skills/mt-add-post/scripts/prepare-url.js "<url>"
 ```
 
 The script handles:
@@ -53,7 +53,7 @@ Check if `content/post/YYYY/MM/DD/index.md` exists:
 
 Run the bundled script:
 ```bash
-.claude/skills/mt-add-post/scripts/find_newsletter_number.sh
+node .claude/skills/mt-add-post/scripts/find-newsletter-number.js
 ```
 
 This searches backwards from current date to find the most recent newsletter and returns the next number.

@@ -49,7 +49,7 @@ Read the full post body. Identify:
 
 Before generating, run:
 ```bash
-grep -rh "^tags:" content/post/ | tr ',' '\n' | grep -oP '(?<=")[^"]+(?=")' | sort | uniq -c | sort -rn | head -40
+node .claude/skills/mt-add-tags/scripts/list-existing-tags.js
 ```
 When a proposed tag matches an existing one case-insensitively, use the existing casing.
 -->
