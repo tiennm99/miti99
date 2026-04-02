@@ -38,6 +38,7 @@
       "mcp__acp__Write",
       "mcp__web-reader__webReader",
       "mcp__web-search-prime__webSearchPrime"
-    ]
+    ],
+    "defaultMode": "acceptEdits"
   }
 }
