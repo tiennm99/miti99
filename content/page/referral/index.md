@@ -1,6 +1,7 @@
 ---
 title: Referral
 description: Referral links for tech services I use
+tags: ["Referral", "AI Tools", "Claude Code"]
 aliases:
   - invite
 menu:
@@ -9,6 +10,22 @@ menu:
     params:
       icon: link
 ---
+
+## [Claude Code Guest Pass](https://claude.ai/referral/ZkoAngod1A)
+
+Share a free week of Claude Code with friends. If they love it and subscribe, you'll get $10 of extra usage to keep building.
+
+Link: https://claude.ai/referral/ZkoAngod1A
+
+## [ClaudeKit](https://claudekit.cc/?ref=BWA910UK)
+
+ClaudeKit is a platform providing tools and resources to work with Claude AI more effectively — including prompt templates, workflows, and extensions.
+
+Sign up via the referral link to get **20% off** your first purchase!
+
+Referral code: `BWA910UK`
+
+Link: https://claudekit.cc/?ref=BWA910UK
 
 ## [Z.ai](https://z.ai/subscribe?ic=PLKIAYEIPW)
 
@@ -29,16 +46,6 @@ Share Your Referral Link
 https://synthetic.new/?referral=CNBFyw28zF0dZoj
 
 Your referral link contains your unique code: CNBFyw28zF0dZoj
-
-## [ClaudeKit](https://claudekit.cc/?ref=BWA910UK)
-
-ClaudeKit is a platform providing tools and resources to work with Claude AI more effectively — including prompt templates, workflows, and extensions.
-
-Sign up via the referral link to get **20% off** your first purchase!
-
-Referral code: `BWA910UK`
-
-Link: https://claudekit.cc/?ref=BWA910UK
 
 ## [ModelArk](https://www.byteplus.com/activity/codingplan?ac=MMAUCIS9NT1S&rc=2739UWRE)
 
