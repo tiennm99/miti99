@@ -130,6 +130,17 @@ Lỗi thứ tư là "hội chứng băng chuyền" — biểu diễn hành vi th
 - Chia sơ đồ lớn thành nhiều góc nhìn tập trung thay vì cố nhét tất cả vào một sơ đồ
 - AI hiện tại chưa đủ tốt để vẽ sơ đồ kiến trúc — thường mơ hồ và bịa thông tin
 
+## [Cách làm việc kỹ thuật với sự hỗ trợ của AI](https://newsletter.eng-leadership.com/p/how-to-do-ai-assisted-engineering)
+
+Bài viết tổng hợp chia sẻ từ 15 kỹ sư và lãnh đạo kỹ thuật giàu kinh nghiệm về cách làm việc hiệu quả với AI trong lập trình. Điểm chung nổi bật: **thiết kế chi tiết trước khi viết mã** cho kết quả tốt hơn — khi AI đảm nhận phần triển khai, nút thắt cổ chai chuyển sang giai đoạn thiết kế, nên cần đầu tư nhiều thời gian hơn ở đó.
+
+Các kỹ sư thành công dựng quy trình có cấu trúc thay vì prompt tuỳ hứng: xây dựng các workflow tái sử dụng, template, và file CLAUDE.md để ghi lại tiêu chuẩn và kỳ vọng của dự án. Nguyên tắc tách biệt trách nhiệm cũng quan trọng — tách việc sinh mã khỏi việc xác minh, dùng nhiều agent chuyên biệt cho từng khía cạnh (bảo mật, hiệu năng, tính đúng đắn), và giữ quyền quyết định ở con người cho các lựa chọn quan trọng như merge và triển khai. Đầu ra đầu tiên của AI là bản nháp, không phải sản phẩm — cần nhiều vòng review từ nhiều góc nhìn khác nhau.
+
+**Điểm chính:**
+- Thiết kế chi tiết trước khi code — triển khai không còn là nút thắt, thiết kế là chỗ cần đầu tư
+- Xây workflow, template, CLAUDE.md thay vì prompt ngẫu nhiên mỗi lần
+- Dùng nhiều agent chuyên biệt (bảo mật, hiệu năng, đúng đắn) để review từ nhiều góc nhìn; giữ quyền quyết định cuối cùng ở con người
+
 ### Bonus
 
 **Images:**
