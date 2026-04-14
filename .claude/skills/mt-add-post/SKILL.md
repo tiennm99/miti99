@@ -34,10 +34,10 @@ node .claude/skills/mt-add-post/scripts/prepare-url.js "<url>"
 ```
 
 The script handles:
-- **Clean**: Remove tracking params (`utm_*`, `fbclid`, `gclid`)
+- **Clean**: Remove tracking params (`utm_*`, `fbclid`, `gclid`, `msclkid`, `mc_eid`, `aid`, `ref`, `ref_src`, `source`, `s`, `ck_subscriber_id`, `igshid`, `yclid`, `vero_id`)
 - **Validate**: Check accessibility (HTTP 200)
-- **Check duplicate**: Search for exact URL in project
-- **Classify**: Article (for main content) or asset (for Bonus section)
+- **Check duplicate**: Compare by bare URL (scheme + host + path) — catches the same article even if previously saved with different tracking params
+- **Classify**: Article (for main content) or asset (image/video/document → Bonus section)
 
 **Skip** URLs that are: inaccessible, duplicates, or fail extraction.
 
@@ -92,6 +92,15 @@ categories: ["Newsletter"]
 ```
 
 **Update Existing Post** - insert new articles **before** the Bonus section:
+
+To insert safely without clobbering the `### Bonus` heading, use an Edit that targets `### Bonus` as the anchor and prepends the new article:
+
+```
+old_string: "### Bonus"
+new_string: "## [New Article Title](clean_url)\n\n[Summary paragraphs]\n\n**Điểm chính:**\n- [point 1]\n- [point 2]\n\n### Bonus"
+```
+
+Result:
 ```markdown
 [Existing articles...]
 
@@ -103,6 +112,8 @@ categories: ["Newsletter"]
 **Images:**
 ![image1](url1)
 ```
+
+If the post has no `### Bonus` yet (first article of the day), append the article at end of file and do NOT create an empty Bonus section — add Bonus only when there's an asset to put in it.
 
 **Bonus Section Format:**
 ```markdown

@@ -16,18 +16,35 @@ const PROJECT_ROOT = path.resolve(__dirname, "../../../..");
 
 // Remove common tracking parameters
 function cleanUrl(rawUrl) {
+  const EXACT_TRACKING = new Set([
+    "fbclid", "gclid", "msclkid", "mc_eid",
+    "aid", "ref", "ref_src", "ref_url", "source", "s",
+    "ck_subscriber_id", "igshid", "yclid", "vero_id",
+  ]);
   try {
     const parsed = new URL(rawUrl);
-    const trackingParams = [
-      "utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content",
-      "fbclid", "gclid", "msclkid", "mc_eid",
-    ];
-    trackingParams.forEach((p) => parsed.searchParams.delete(p));
+    // Strip any utm_* param plus known exact trackers
+    [...parsed.searchParams.keys()].forEach((k) => {
+      if (k.toLowerCase().startsWith("utm_") || EXACT_TRACKING.has(k.toLowerCase())) {
+        parsed.searchParams.delete(k);
+      }
+    });
     return parsed.toString();
   } catch {
     // If URL parsing fails, do basic string cleanup
-    return rawUrl.replace(/[?&](utm_[^&]*|fbclid|gclid|msclkid|mc_eid)[^&]*/g, "")
+    return rawUrl.replace(/[?&](utm_[^&]*|fbclid|gclid|msclkid|mc_eid|aid|ref|ref_src|ref_url|source|ck_subscriber_id|igshid|yclid|vero_id)=[^&]*/gi, "")
+      .replace(/\?&/, "?")
       .replace(/[?&]$/, "");
+  }
+}
+
+// Extract the bare URL (scheme + host + path) — used for stricter duplicate checks
+function bareUrl(targetUrl) {
+  try {
+    const p = new URL(targetUrl);
+    return `${p.protocol}//${p.host}${p.pathname}`.replace(/\/$/, "");
+  } catch {
+    return targetUrl.split("?")[0].replace(/\/$/, "");
   }
 }
 
@@ -48,11 +65,14 @@ async function checkAccessibility(targetUrl) {
   }
 }
 
-// Check if URL already exists in project content
+// Check if URL already exists in project content.
+// Compare by bare URL (no query string) so stored copies with different tracking
+// params still register as duplicates.
 function checkDuplicate(targetUrl) {
   try {
     const contentDir = path.join(PROJECT_ROOT, "content");
-    execSync(`grep -rF "${targetUrl}" "${contentDir}"`, { stdio: "pipe" });
+    const needle = bareUrl(targetUrl);
+    execSync(`grep -rF "${needle}" "${contentDir}"`, { stdio: "pipe" });
     return true;
   } catch {
     return false;
