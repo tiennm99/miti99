@@ -28,7 +28,7 @@ Use this skill only after a WebFetch attempt returned one of:
 1. Confirm WebFetch already failed on the target URL
 2. Run the fetch script:
    ```bash
-   bash .claude/skills/mt-webfetch/scripts/fetch.sh "<target_url>"
+   node .claude/skills/mt-webfetch/scripts/fetch-via-defuddle.js "<target_url>"
    ```
    Alternatively, use WebFetch with the defuddle-prefixed URL:
    ```
@@ -70,7 +70,7 @@ Never loop. Never retry more than once.
 User wanted to extract content from https://example.com/article
 WebFetch returned: "Request failed with status code 403"
 → Trigger mt-webfetch
-→ bash .claude/skills/mt-webfetch/scripts/fetch.sh "https://example.com/article"
+→ node .claude/skills/mt-webfetch/scripts/fetch-via-defuddle.js "https://example.com/article"
 → Parse markdown output
 → Summarize as usual
 ```
