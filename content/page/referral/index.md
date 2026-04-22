@@ -1,7 +1,7 @@
 ---
 title: Referral
 description: Referral links for tech services I use
-tags: ["Referral", "AI Tools", "Claude Code"]
+tags: ["Referral", "AI Tools", "Claude Code", "Cloud Storage"]
 aliases:
   - invite
 menu:
@@ -52,3 +52,13 @@ Your referral link contains your unique code: CNBFyw28zF0dZoj
 https://www.byteplus.com/activity/codingplan?ac=MMAUCIS9NT1S&rc=2739UWRE
 
 ![modelark](modelark.png)
+
+## [PikPak](https://mypikpak.com/drive/activity/invited?invitation-code=75940186)
+
+PikPak is a private cloud storage service with built-in support for magnet links, torrents, and saving videos from the web — great for offline downloads and cross-device access.
+
+Sign up with my invitation code to unlock **free premium days** (10 TB of premium storage for a limited trial). Enter the code within 12 hours of registration, or install directly via the link to auto-bind the invitation.
+
+Invitation code: `75940186`
+
+Link: https://mypikpak.com/drive/activity/invited?invitation-code=75940186
