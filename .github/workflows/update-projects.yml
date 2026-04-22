@@ -1,4 +1,4 @@
-name: Update GitHub Pages list
+name: Update projects list
 
 on:
   schedule:
@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: update-pages
+  group: update-projects
   cancel-in-progress: false
 
 jobs:
@@ -30,20 +30,20 @@ jobs:
         with:
           node-version: 24
 
-      - name: Refresh pages list
+      - name: Refresh projects list
         env:
           GH_TOKEN: ${{ secrets.PAGES_FETCH_TOKEN }}
           GH_USER: tiennm99
-        run: node .github/scripts/update-pages-list.mjs
+        run: node .github/scripts/update-projects-list.mjs
 
       - name: Commit and push
         run: |
-          if [[ -z "$(git status --porcelain content/page/pages/index.md)" ]]; then
+          if [[ -z "$(git status --porcelain content/page/projects/index.md)" ]]; then
             echo "No changes to commit."
             exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add content/page/pages/index.md
-          git commit -m "chore(pages): refresh GitHub Pages list"
+          git add content/page/projects/index.md
+          git commit -m "chore(projects): refresh projects list"
           git push
