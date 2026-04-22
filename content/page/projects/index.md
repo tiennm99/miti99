@@ -10,7 +10,12 @@ menu:
       icon: list
 ---
 
-Danh sách những projects mình sở hữu hoặc đã đóng góp, có URL demo / homepage. Bao gồm cả [GitHub Pages](https://pages.github.com/) và các project host ở nơi khác.
+Danh sách những projects mình đã làm hoặc có đóng góp, có URL demo / homepage. URL có thể là:
+
+- Website tĩnh / app host trên [GitHub Pages](https://pages.github.com/), [Cloudflare Pages](https://pages.cloudflare.com/), [Vercel](https://vercel.com/), [Netlify](https://www.netlify.com/)...
+- [Cloudflare Workers](https://workers.cloudflare.com/) hoặc serverless endpoint khác
+- Telegram bot ([t.me/...](https://t.me/))
+- Custom domain, hoặc bất kỳ hình thức deploy nào khác
 
 _(Danh sách này được tạo tự động, sắp xếp theo tên repo)_
 
