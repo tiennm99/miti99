@@ -51,7 +51,7 @@ Your referral link contains your unique code: CNBFyw28zF0dZoj
 
 https://www.byteplus.com/activity/codingplan?ac=MMAUCIS9NT1S&rc=2739UWRE
 
-![modelark](modelark.png)
+[![modelark](modelark.png)](https://www.byteplus.com/activity/codingplan?ac=MMAUCIS9NT1S&rc=2739UWRE)
 
 ## [PikPak](https://mypikpak.com/drive/activity/invited?invitation-code=75940186)
 
