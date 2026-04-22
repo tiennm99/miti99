@@ -104,6 +104,7 @@ _(Danh sách này được tạo tự động, sắp xếp theo tên repo)_
 | [tiennm99/vngeoguessr](https://github.com/tiennm99/vngeoguessr) | GeoGuessr clone for Vietnamese locations — Mapillary street view, Nominatim + Turf.js boundaries, Redis leaderboards | [https://vngeoguessr.vercel.app](https://vngeoguessr.vercel.app) |
 | [tiennm99/webcv](https://github.com/tiennm99/webcv) |  | [https://tiennm99.github.io/webcv/](https://tiennm99.github.io/webcv/) |
 | [tiennm99/webgl-heart](https://github.com/tiennm99/webgl-heart) |  | [https://tiennm99.github.io/webgl-heart/](https://tiennm99.github.io/webgl-heart/) |
+| [tiennm99/word2sim](https://github.com/tiennm99/word2sim) | Word2vec cosine similarity API. Tiny stateless FastAPI service over gensim pretrained vectors (GoogleNews 3M×300). Endpoints: /similarity /neighbors /vocab /random. Docker-ready building block for Semantle-style games, search re-rankers, writing tools. | [https://word2sim.sg.miti99.com/](https://word2sim.sg.miti99.com/) |
 | [tienthieusac/tienthieusac.github.io](https://github.com/tienthieusac/tienthieusac.github.io) | Tiên Thiếu Sắc | [https://tienthieusac.github.io/](https://tienthieusac.github.io/) |
 
 <!-- PROJECTS_LIST_END -->
