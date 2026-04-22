@@ -12,4 +12,5 @@ Danh sách những trang mình host trên [GitHub Pages](https://pages.github.co
 
 _(Danh sách này được tạo tự động, thứ tự không quan trọng nhé)_
 
-{{< github-pages >}}
+<!-- PAGES_LIST_START -->
+<!-- PAGES_LIST_END -->
