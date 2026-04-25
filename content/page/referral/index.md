@@ -35,6 +35,19 @@ Link: https://claudekit.cc/?ref=BWA910UK
 
 🚀 You've been invited to join the GLM Coding Plan! Enjoy full support for Claude Code, Cline, and 20+ top coding tools — starting at just $10/month. Subscribe now and grab the limited-time deal! Link： https://z.ai/subscribe?ic=PLKIAYEIPW
 
+### [MiniMax](https://platform.minimax.io/subscribe/token-plan?code=CAQ5sxHAq6&source=link)
+
+🎁 MiniMax Token Plan New Year Mega Offer — Token Plan Referral Program until **May 1, 2026**.
+
+- Friends get **10% OFF** any Token Plan subscription and become a dev ambassador (join the dev community).
+- I earn **10% back in API vouchers** for every successful paid referral, usable across all MiniMax models — plus priority access to events and model previews.
+
+Vouchers work with M2.7, Speech 2.8, Image-01, Hailuo video, and Music-2.5.
+
+Referral code: `CAQ5sxHAq6`
+
+Link: https://platform.minimax.io/subscribe/token-plan?code=CAQ5sxHAq6&source=link
+
 ### [Synthetic](https://synthetic.new/?referral=CNBFyw28zF0dZoj)
 
 Thanks for helping us grow!
