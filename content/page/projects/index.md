@@ -67,7 +67,7 @@ _(Danh sách này được tạo tự động, sắp xếp theo tên repo)_
 | [tiennm99/latex-cv](https://github.com/tiennm99/latex-cv) | My CV written in LaTeX | [https://tiennm99.github.io/latex-cv/](https://tiennm99.github.io/latex-cv/) |
 | [tiennm99/loldle](https://github.com/tiennm99/loldle) | LoLdle-style League of Legends daily champion guessing game — data auto-updated from my loldle-data repo | [https://tiennm99.github.io/loldle/](https://tiennm99.github.io/loldle/) |
 | [tiennm99/lombok](https://github.com/tiennm99/lombok) | Very spicy additions to the Java programming language. | [https://projectlombok.org/](https://projectlombok.org/) |
-| [tiennm99/loto](https://github.com/tiennm99/loto) | Lô Tô (Vietnamese lottery bingo) number board — Next.js web app | [https://tiennm99.github.io/loto/](https://tiennm99.github.io/loto/) |
+| [tiennm99/loto](https://github.com/tiennm99/loto) | Lô Tô (Vietnamese lottery bingo) number board — Next.js web app | [https://loto.miti99.com](https://loto.miti99.com) |
 | [tiennm99/MaiBD2021](https://github.com/tiennm99/MaiBD2021) | Birthday page for Trúc Mai (2021) | [https://tiennm99.github.io/MaiBD2021/](https://tiennm99.github.io/MaiBD2021/) |
 | [tiennm99/miti-app-store-scraper](https://github.com/tiennm99/miti-app-store-scraper) | app-store-scraper hosted as serverless functions on Cloudflare Workers | [https://miti-app-store-scraper.vercel.app](https://miti-app-store-scraper.vercel.app) |
 | [tiennm99/miti-google-play-scraper](https://github.com/tiennm99/miti-google-play-scraper) | google-play-scraper hosted as serverless functions on Vercel | [https://miti-google-play-scraper.vercel.app](https://miti-google-play-scraper.vercel.app) |
