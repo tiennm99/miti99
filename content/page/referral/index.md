@@ -17,7 +17,14 @@ menu:
 
 Share a free week of Claude Code with friends. If they love it and subscribe, you'll get $10 of extra usage to keep building.
 
-Link: https://claude.ai/referral/ZkoAngod1A
+> **Update (2026-04-28):** All of my own passes have been claimed. You can still try my friend's passes below.
+
+<details>
+<summary>Friend's passes (click to reveal)</summary>
+
+- https://claude.ai/referral/7RBJExZ7LA
+
+</details>
 
 ### [ClaudeKit](https://claudekit.cc/?ref=BWA910UK)
 
