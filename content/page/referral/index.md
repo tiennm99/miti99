@@ -17,7 +17,9 @@ menu:
 
 Share a free week of Claude Code with friends. If they love it and subscribe, you'll get $10 of extra usage to keep building.
 
-> **Update (2026-04-28):** All of my own passes have been claimed. You can still try my friend's passes below.
+My passes:
+
+- ~~https://claude.ai/referral/ZkoAngod1A~~ — **out of stock as of 2026-04-30**
 
 <details>
 <summary>Friend's passes (click to reveal)</summary>
