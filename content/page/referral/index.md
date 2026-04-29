@@ -21,12 +21,9 @@ My passes:
 
 - ~~https://claude.ai/referral/ZkoAngod1A~~ — **out of stock as of 2026-04-30**
 
-<details>
-<summary>Friend's passes (click to reveal)</summary>
+Friend's passes:
 
 - https://claude.ai/referral/7RBJExZ7LA
-
-</details>
 
 ### [ClaudeKit](https://claudekit.cc/?ref=BWA910UK)
 
