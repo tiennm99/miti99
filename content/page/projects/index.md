@@ -60,6 +60,7 @@ _(Danh sách này được tạo tự động, sắp xếp theo tên repo)_
 | [tiennm99/godot](https://github.com/tiennm99/godot) | Godot Engine – Multi-platform 2D and 3D game engine | [https://godotengine.org](https://godotengine.org) |
 | [tiennm99/hugo-blox-builder](https://github.com/tiennm99/hugo-blox-builder) | 🧱 Describe your site, AI builds it, you own it as Markdown. Snap together Tailwind blocks like Lego — landing pages, blogs, portfolios, docs & more. No AI slop. Free to deploy anywhere 👇 | [https://wowchemy.com/templates/](https://wowchemy.com/templates/) |
 | [tiennm99/hurt-page](https://github.com/tiennm99/hurt-page) | Built/hosted static version of the 'hurt' website. | [https://tiennm99.github.io/hurt-page/](https://tiennm99.github.io/hurt-page/) |
+| [tiennm99/iammiti99](https://github.com/tiennm99/iammiti99) | Personal link-in-bio page — a self-hosted Linktree alternative for my own use. | [https://tiennm99.github.io/iammiti99/](https://tiennm99.github.io/iammiti99/) |
 | [tiennm99/is-a-dev](https://github.com/tiennm99/is-a-dev) | Grab your own sweet-looking '.is-a.dev' subdomain. | [https://is-a.dev](https://is-a.dev) |
 | [tiennm99/is-a-good-dev](https://github.com/tiennm99/is-a-good-dev) | Register for your is-a-good.dev domain! | [https://is-a-good.dev](https://is-a-good.dev) |
 | [tiennm99/ja-netfilter](https://github.com/tiennm99/ja-netfilter) | A javaagent framework | [https://ja-netfilter.com](https://ja-netfilter.com) |
@@ -69,6 +70,7 @@ _(Danh sách này được tạo tự động, sắp xếp theo tên repo)_
 | [tiennm99/lombok](https://github.com/tiennm99/lombok) | Very spicy additions to the Java programming language. | [https://projectlombok.org/](https://projectlombok.org/) |
 | [tiennm99/loto](https://github.com/tiennm99/loto) | Lô Tô (Vietnamese lottery bingo) number board — Next.js web app | [https://loto.miti99.com](https://loto.miti99.com) |
 | [tiennm99/MaiBD2021](https://github.com/tiennm99/MaiBD2021) | Birthday page for Trúc Mai (2021) | [https://tiennm99.github.io/MaiBD2021/](https://tiennm99.github.io/MaiBD2021/) |
+| [tiennm99/mathmax](https://github.com/tiennm99/mathmax) | MathMax — Toán tương tác cho học sinh THCS Việt Nam (lớp 6-9). Static site. | [https://tiennm99.github.io/mathmax/](https://tiennm99.github.io/mathmax/) |
 | [tiennm99/miti-app-store-scraper](https://github.com/tiennm99/miti-app-store-scraper) | app-store-scraper hosted as serverless functions on Cloudflare Workers | [https://miti-app-store-scraper.vercel.app](https://miti-app-store-scraper.vercel.app) |
 | [tiennm99/miti-google-play-scraper](https://github.com/tiennm99/miti-google-play-scraper) | google-play-scraper hosted as serverless functions on Vercel | [https://miti-google-play-scraper.vercel.app](https://miti-google-play-scraper.vercel.app) |
 | [tiennm99/miti-loki](https://github.com/tiennm99/miti-loki) | Cloudflare Worker that forwards log messages to Grafana Cloud Loki. | [https://miti-loki.miti99.workers.dev/](https://miti-loki.miti99.workers.dev/) |
