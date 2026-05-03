@@ -26,6 +26,7 @@ _(Danh sách này được tạo tự động, sắp xếp theo tên repo)_
 | [abhisheknaiidu/awesome-github-profile-readme](https://github.com/abhisheknaiidu/awesome-github-profile-readme) | 😎 A curated list of awesome GitHub Profile which updates in real time | [https://bit.ly/awesome-gh](https://bit.ly/awesome-gh) |
 | [bkfcduchoa/bkfcduchoa.github.io](https://github.com/bkfcduchoa/bkfcduchoa.github.io) |  | [https://bkfcduchoa.github.io/](https://bkfcduchoa.github.io/) |
 | [coollabsio/coolify](https://github.com/coollabsio/coolify) | An open-source, self-hostable PaaS alternative to Vercel, Heroku & Netlify that lets you easily deploy static sites, databases, full-stack applications and 280+ one-click services on your own servers. | [https://coolify.io](https://coolify.io) |
+| [gohugoio/hugoThemesSiteBuilder](https://github.com/gohugoio/hugoThemesSiteBuilder) | The source for https://themes.gohugo.io | [https://themes.gohugo.io](https://themes.gohugo.io) |
 | [is-a-dev/register](https://github.com/is-a-dev/register) | Grab your own sweet-looking '.is-a.dev' subdomain. | [https://docs.is-a.dev](https://docs.is-a.dev) |
 | [is-a-good-dev/register](https://github.com/is-a-good-dev/register) | Register for your is-a-good.dev domain! | [https://is-a-good.dev](https://is-a-good.dev) |
 | [ngamtheproject/ngamtheproject.github.io](https://github.com/ngamtheproject/ngamtheproject.github.io) | Website for Ngăm - a charity organization founded by high school students. | [https://ngamtheproject.github.io/](https://ngamtheproject.github.io/) |
@@ -60,6 +61,7 @@ _(Danh sách này được tạo tự động, sắp xếp theo tên repo)_
 | [tiennm99/goclaw](https://github.com/tiennm99/goclaw) | GoClaw - GoClaw is OpenClaw rebuilt in Go — with multi-tenant isolation, 5-layer security, and native concurrency. Deploy AI agent teams at scale without compromising on safety. | [https://goclaw.sh](https://goclaw.sh) |
 | [tiennm99/godot](https://github.com/tiennm99/godot) | Godot Engine – Multi-platform 2D and 3D game engine | [https://godotengine.org](https://godotengine.org) |
 | [tiennm99/hugo-blox-builder](https://github.com/tiennm99/hugo-blox-builder) | 🧱 Describe your site, AI builds it, you own it as Markdown. Snap together Tailwind blocks like Lego — landing pages, blogs, portfolios, docs & more. No AI slop. Free to deploy anywhere 👇 | [https://wowchemy.com/templates/](https://wowchemy.com/templates/) |
+| [tiennm99/hugoThemesSiteBuilder](https://github.com/tiennm99/hugoThemesSiteBuilder) | The source for https://themes.gohugo.io | [https://themes.gohugo.io](https://themes.gohugo.io) |
 | [tiennm99/hurt-page](https://github.com/tiennm99/hurt-page) | Built/hosted static version of the 'hurt' website. | [https://tiennm99.github.io/hurt-page/](https://tiennm99.github.io/hurt-page/) |
 | [tiennm99/iammiti99](https://github.com/tiennm99/iammiti99) | Personal link-in-bio page — a self-hosted Linktree alternative for my own use. | [https://tiennm99.github.io/iammiti99/](https://tiennm99.github.io/iammiti99/) |
 | [tiennm99/is-a-dev](https://github.com/tiennm99/is-a-dev) | Grab your own sweet-looking '.is-a.dev' subdomain. | [https://is-a.dev](https://is-a.dev) |
